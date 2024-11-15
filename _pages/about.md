@@ -9,12 +9,12 @@ profile:
   image: profile_pic.png
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p> Bldg. 302, Rm. 516-1</p>
-    <p> Seoul National University</p>
-    <p> Seoul, Korea 08826</p>
+    <p> Bldg. Prime, Rm. 50 7</p>
+    <p> Sunghin Women's University </p>
+    <p> Seoul, Korea 02844 </p>
 
 
-news: false # includes a list of news items
+news: false # includes a list of news item
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
