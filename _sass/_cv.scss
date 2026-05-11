@@ -10,6 +10,37 @@ table.table-cv {
   background-color: transparent !important;
 }
 
+.cv-time-row {
+  display: grid;
+  grid-template-columns: minmax(9.5rem, 12rem) minmax(0, 1fr);
+  column-gap: 1.25rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.cv-time-meta,
+.cv-time-main {
+  min-width: 0;
+}
+
+.cv-time-meta {
+  display: flex;
+  justify-content: flex-end;
+
+  .table-cv {
+    width: 100%;
+    max-width: 12rem;
+  }
+
+  td {
+    text-align: right;
+  }
+}
+
+.cv-time-main {
+  overflow-wrap: anywhere;
+}
+
 a.btncv {
   color: var(--global-text-color) !important;
   border: 1px solid var(--global-text-color) !important;
@@ -39,7 +70,10 @@ a.btncv:hover {
 
 p.location {
   font-size: 0.7rem;
-  white-space: nowrap;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 i.iconlocation {
@@ -61,6 +95,29 @@ i.icondepartment {
 
 table.institution {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .cv-time-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.35rem;
+  }
+
+  .cv-time-meta {
+    justify-content: flex-start;
+
+    .table-cv {
+      max-width: none;
+    }
+
+    td {
+      text-align: left;
+    }
+  }
+
+  .cv-time-main {
+    margin-top: 0.25rem !important;
+  }
 }
 
 td.department {

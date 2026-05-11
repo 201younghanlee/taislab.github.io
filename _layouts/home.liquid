@@ -1,0 +1,54 @@
+---
+---
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+  </head>
+
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    {% include header.liquid %}
+
+    <main class="home-page" role="main">
+      <section
+        class="home-hero"
+        style="background-image: url('{{ page.hero_image | prepend: '/assets/img/' | relative_url }}');"
+      >
+        <div class="home-hero__shade"></div>
+        <canvas class="home-hero__network" id="home-neural-canvas" aria-hidden="true"></canvas>
+        <div class="home-hero__content">
+          <h1>Trust AI &amp; Security Lab, TAIS</h1>
+          <p>{{ content | strip_html | strip }}</p>
+        </div>
+      </section>
+
+      <section class="home-news" aria-labelledby="home-news-title">
+        <div class="home-news__inner">
+          <h2 id="home-news-title">News</h2>
+          {% include news.liquid %}
+        </div>
+      </section>
+    </main>
+
+    {% include footer.liquid %}
+
+    {% include scripts/jquery.liquid %}
+    {% include scripts/bootstrap.liquid %}
+    {% include scripts/masonry.liquid %}
+    {% include scripts/mermaid.liquid %}
+    {% include scripts/diff2html.liquid %}
+    {% include scripts/leaflet.liquid %}
+    {% include scripts/chartjs.liquid %}
+    {% include scripts/echarts.liquid %}
+    {% include scripts/vega.liquid %}
+    {% include scripts/tikzjax.liquid %}
+    {% include scripts/misc.liquid %}
+    {% include scripts/badges.liquid %}
+    {% include scripts/mathjax.liquid %}
+    {% include scripts/analytics.liquid %}
+    {% include scripts/progressBar.liquid %}
+    {% include scripts/wechatModal.liquid %}
+    {% include scripts/imageLayouts.liquid %}
+    <script src="{{ '/assets/js/home-neural.js' | relative_url }}"></script>
+  </body>
+</html>

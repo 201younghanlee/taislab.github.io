@@ -365,14 +365,85 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-#light-toggle {
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 1.8rem;
   padding: 0;
-  border: 0;
-  background-color: inherit;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: var(--global-card-bg-color);
   color: var(--global-text-color);
+  cursor: pointer;
+  box-shadow: none;
 
   &:hover {
+    border-color: var(--global-hover-color);
     color: var(--global-hover-color);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-hover-color);
+    outline-offset: 3px;
+  }
+}
+
+.theme-toggle__track {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.theme-toggle__icon {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: var(--global-text-color-light);
+}
+
+.theme-toggle__thumb {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  background: var(--global-text-color);
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+html[data-theme-setting="dark"] {
+  .theme-toggle__icon--dark {
+    color: var(--global-bg-color);
+  }
+}
+
+html[data-theme-setting="light"] {
+  .theme-toggle__thumb {
+    transform: translateX(1.45rem);
+  }
+
+  .theme-toggle__icon--light {
+    color: var(--global-bg-color);
   }
 }
 
@@ -464,6 +535,12 @@ footer.sticky-bottom {
   .container {
     text-align: center;
   }
+}
+
+.footer-address {
+  margin-top: 0.35rem;
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
 }
 
 // CV

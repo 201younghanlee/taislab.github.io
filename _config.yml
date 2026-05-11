@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
+browser_title: TAIS LAB # the browser tab title
 first_name: Younghan
 middle_name: 
 last_name: Lee
@@ -15,7 +16,7 @@ email: 201younghanlee@gmail.com
 #Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords:  # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: tais-lab-icon.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://201younghanlee.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -71,7 +72,7 @@ github_username: 201younghanlee # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: hapytrefrend@gmail.com # your LinkedIn user name
+linkedin_username: 201younghanlee # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: 6t4qpowAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
