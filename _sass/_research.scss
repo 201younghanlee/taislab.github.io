@@ -58,14 +58,14 @@
   height: 100%;
 }
 
-.diagram-panel,
-.diagram-boundary {
-  fill: rgba(255, 255, 255, 0.88);
+.research-diagram .diagram-panel,
+.research-diagram .diagram-boundary {
+  fill: #f8fbff;
   stroke: #9fb4c8;
   stroke-width: 1.5;
 }
 
-.diagram-boundary {
+.research-diagram .diagram-boundary {
   stroke-dasharray: 5 4;
 }
 
@@ -116,32 +116,47 @@
   fill: #c84d4d;
 }
 
-.diagram-label,
-.diagram-small {
+.research-diagram .diagram-label,
+.research-diagram .diagram-small {
   fill: #061b43;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 700;
 }
 
-.diagram-label {
+.research-diagram .diagram-label {
   font-size: 18px;
 }
 
-.diagram-small {
+.research-diagram .diagram-small {
   font-size: 12px;
   font-weight: 600;
 }
 
-.diagram-white {
+.research-diagram .diagram-white {
   fill: #ffffff;
 }
 
-.diagram-caption {
+.research-diagram .diagram-caption {
   fill: #061b43;
 }
 
 html[data-theme="dark"] {
-  .diagram-caption {
+  .research-diagram .diagram-panel,
+  .research-diagram .diagram-boundary {
+    fill: #f8fbff;
+    stroke: #c6d4e1;
+  }
+
+  .research-diagram .diagram-label,
+  .research-diagram .diagram-small {
+    fill: #061b43;
+  }
+
+  .research-diagram .diagram-white {
+    fill: #ffffff;
+  }
+
+  .research-diagram .diagram-caption {
     fill: #f2f6fb;
   }
 
