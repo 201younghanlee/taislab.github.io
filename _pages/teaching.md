@@ -2,10 +2,75 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-nav: false
-nav_order: 6
-redirect: /cv/#university-teaching
-sitemap: false
+description: University courses, teaching evidence, and selected additional teaching.
+nav: true
+nav_order: 5
 ---
 
-Teaching has moved to the [CV page]({{ '/cv/#university-teaching' | relative_url }}).
+{% assign university_teaching = site.data.cv | where: "title", "University Teaching" | first %}
+{% assign teaching_evidence = site.data.cv | where: "title", "Teaching Evidence and Development" | first %}
+{% assign additional_teaching = site.data.cv | where: "title", "Additional Teaching" | first %}
+
+<section class="teaching-page">
+  <section class="teaching-section" aria-labelledby="university-teaching-heading">
+    <header class="teaching-section__heading">
+      <p class="teaching-eyebrow">Formal courses</p>
+      <h2 id="university-teaching-heading">University teaching</h2>
+    </header>
+
+    <div class="teaching-course-list">
+      {% for course in university_teaching.contents %}
+        <article class="teaching-course">
+          <div class="teaching-course__main">
+            <h3>{{ course.title }}</h3>
+            <p>{{ course.institution }}</p>
+            {% if course.description %}
+              {% for detail in course.description %}
+                <p class="teaching-course__detail">{{ detail }}</p>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <p class="teaching-course__year">{{ course.year }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="teaching-section" aria-labelledby="teaching-evidence-heading">
+    <header class="teaching-section__heading">
+      <p class="teaching-eyebrow">Evaluation and development</p>
+      <h2 id="teaching-evidence-heading">Teaching evidence</h2>
+    </header>
+
+    <ul class="teaching-evidence">
+      {% for item in teaching_evidence.contents %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="teaching-section" aria-labelledby="additional-teaching-heading">
+    <header class="teaching-section__heading">
+      <p class="teaching-eyebrow">Postgraduate, international, and invited teaching</p>
+      <h2 id="additional-teaching-heading">Additional teaching</h2>
+    </header>
+
+    <div class="teaching-course-list">
+      {% for course in additional_teaching.contents %}
+        <article class="teaching-course">
+          <div class="teaching-course__main">
+            <h3>{{ course.title }}</h3>
+            <p>{{ course.institution }}</p>
+            {% if course.description %}
+              {% for detail in course.description %}
+                <p class="teaching-course__detail">{{ detail }}</p>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <p class="teaching-course__year">{{ course.year }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+</section>
