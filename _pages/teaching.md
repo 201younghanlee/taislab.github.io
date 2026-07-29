@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-{% assign university_teaching = site.data.teaching.university %}
+{% assign formal_teaching = site.data.teaching.formal %}
 {% assign teaching_evidence = site.data.teaching.evidence %}
 {% assign additional_teaching = site.data.teaching.additional %}
 
@@ -18,20 +18,33 @@ nav_order: 5
       <h2 id="university-teaching-heading">University teaching</h2>
     </header>
 
-    <div class="teaching-course-list">
-      {% for course in university_teaching %}
-        <article class="teaching-course">
-          <div class="teaching-course__main">
-            <h3>{{ course.title }}</h3>
-            <p>{{ course.institution }}</p>
-            {% if course.description %}
-              {% for detail in course.description %}
-                <p class="teaching-course__detail">{{ detail }}</p>
-              {% endfor %}
-            {% endif %}
+    <div class="teaching-term-list">
+      {% for term in formal_teaching %}
+        <section class="teaching-term" aria-labelledby="teaching-term-{{ forloop.index }}">
+          <header class="teaching-term__heading">
+            <h3 id="teaching-term-{{ forloop.index }}">{{ term.term }}</h3>
+            <p class="teaching-term__load">{{ term.load }}</p>
+          </header>
+
+          <div class="teaching-course-list">
+            {% for course in term.courses %}
+              <article class="teaching-course">
+                <div class="teaching-course__main">
+                  <h4>{{ course.title }}</h4>
+                  <p>{{ course.institution }}</p>
+                  {% if course.description %}
+                    {% for detail in course.description %}
+                      <p class="teaching-course__detail">{{ detail }}</p>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+                {% if course.meta %}
+                  <p class="teaching-course__year">{{ course.meta }}</p>
+                {% endif %}
+              </article>
+            {% endfor %}
           </div>
-          <p class="teaching-course__year">{{ course.year }}</p>
-        </article>
+        </section>
       {% endfor %}
     </div>
   </section>
