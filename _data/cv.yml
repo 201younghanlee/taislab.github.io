@@ -150,23 +150,20 @@
 - title: Current Research
   type: research_map
   contents:
-    - label: Core research areas
-      title: LLM4SEC and AI/ML Security
+    - label: LLMs for security
+      title: LLM4SEC
       items:
         - Automated vulnerability repair
         - Vulnerability detection and verification
         - Secure code generation
-        - Federated-learning security
-    - label: Security for LLMs
-      title: SEC4LLM
+        - Kernel code fault localization
+    - label: Security for LLMs and AI/ML systems
+      title: "SEC4LLM & AI/ML Security"
       items:
         - RAG security
         - IaC agent assurance
         - ROS 2 agent assurance
-    - label: Related areas
-      title: Kernel Code and Model Security
-      items:
-        - Kernel code fault localization
+        - Federated-learning security
         - Model extraction
 
 - title: Selected Funded Research Projects
