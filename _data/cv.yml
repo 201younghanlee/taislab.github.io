@@ -105,6 +105,15 @@
       linkitems:
         - link: /publications/#han2025poster
           linkname: Publication
+    - title: "VFLIP: A Backdoor Defense for Vertical Federated Learning via Identification and Purification"
+      year: 2024
+      description:
+        - "Yungi Cho, Woorim Han, Miseon Yu, Younghan Lee, Ho Bae, and Yunheung Paek."
+        - "ESORICS, LNCS 14985, 291–312. DOI 10.1007/978-3-031-70903-6_15."
+        - "Role: Co-author."
+      linkitems:
+        - link: /publications/#cho2024vflip
+          linkname: Publication
     - title: "FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models"
       year: 2023
       description:
