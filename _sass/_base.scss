@@ -4,6 +4,46 @@
 
 // Typography
 
+body {
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.03rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.002em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+p,
+li,
+td,
+th {
+  line-height: 1.65;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+// Bootstrap's light utility previously rendered long CV sections at weight 300.
+.cv .font-weight-light {
+  font-weight: 400 !important;
+}
+
 p,
 h1,
 h2,
@@ -17,6 +57,12 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 hr {
