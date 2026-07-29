@@ -69,7 +69,6 @@
     - Federated-learning security
     - Security and assurance of LLM-based and agentic systems
     - Kernel code fault localization
-    - Model extraction
 
 - title: Selected Publications
   type: time_table
@@ -164,7 +163,6 @@
         - IaC agent assurance
         - ROS 2 agent assurance
         - Federated-learning security
-        - Model extraction
 
 - title: Selected Funded Research Projects
   type: time_table
