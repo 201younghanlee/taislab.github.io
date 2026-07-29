@@ -16,6 +16,9 @@ nav_order: 4
   review are not included.
 </p>
 
+{% capture domestic_conference_count %}{% bibliography_count --query @*[scope=domestic && pubtype=conference] %}{% endcapture %}
+{% assign domestic_conference_count = domestic_conference_count | strip | plus: 0 %}
+
 <nav class="publication-index" aria-label="Publication sections">
   <a href="#international-publications">
     <span>International</span>
@@ -23,7 +26,7 @@ nav_order: 4
   </a>
   <a href="#domestic-publications">
     <span>Domestic</span>
-    <small>Peer-reviewed journal articles</small>
+    <small>Journal articles and conference papers</small>
   </a>
 </nav>
 
@@ -59,6 +62,13 @@ nav_order: 4
     <h3>Journal Articles</h3>
     {% bibliography --group_by year --group_order descending --query @*[scope=domestic && pubtype=journal] %}
   </div>
+
+  {% if domestic_conference_count > 0 %}
+    <div class="publication-kind" id="domestic-conferences">
+      <h3>Conference Papers</h3>
+      {% bibliography --group_by year --group_order descending --query @*[scope=domestic && pubtype=conference] %}
+    </div>
+  {% endif %}
 </section>
 
 </div>
