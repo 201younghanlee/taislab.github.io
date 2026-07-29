@@ -35,6 +35,13 @@ table.table-cv {
   td {
     text-align: right;
   }
+
+  .badge {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.35;
+    text-align: right;
+  }
 }
 
 .cv-time-main {
@@ -113,10 +120,65 @@ table.institution {
     td {
       text-align: left;
     }
+
+    .badge {
+      text-align: left;
+    }
   }
 
   .cv-time-main {
     margin-top: 0.25rem !important;
+  }
+}
+
+/*****************************
+ * CV RESEARCH MAP styles
+ *****************************/
+
+.cv-research-map {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.cv-research-group {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  min-width: 0;
+
+  h5 {
+    margin: 0 0 0.65rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-research-label {
+  margin: 0 0 0.2rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991.98px) {
+  .cv-research-map {
+    grid-template-columns: 1fr;
   }
 }
 

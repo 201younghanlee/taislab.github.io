@@ -1,0 +1,17 @@
+<div class="cv-research-map">
+  {% for content in entry.contents %}
+    <section class="cv-research-group">
+      {% if content.label %}
+        <p class="cv-research-label">{{ content.label }}</p>
+      {% endif %}
+      <h5>{{ content.title }}</h5>
+      {% if content.items %}
+        <ul>
+          {% for item in content.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>

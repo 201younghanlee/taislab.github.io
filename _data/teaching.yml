@@ -1,0 +1,83 @@
+university:
+  - title: Python Programming
+    institution: Sungshin Women's University
+    year: Spring 2025; Spring 2026
+    description:
+      - Undergraduate course
+  - title: Artificial Intelligence Basics
+    institution: Sungshin Women's University
+    year: Spring 2025; Spring 2026
+    description:
+      - Undergraduate core course
+  - title: Cybersecurity Monitoring
+    institution: Sungshin Women's University
+    year: Autumn 2025
+    description:
+      - Team-taught advanced undergraduate course
+  - title: Artificial Intelligence Security
+    institution: Sungshin Women's University
+    year: Autumn 2024; Autumn 2025
+    description:
+      - Advanced undergraduate course
+  - title: Database Security
+    institution: Sungshin Women's University
+    year: Autumn 2024; Autumn 2025
+    description:
+      - Advanced undergraduate course
+  - title: Introduction to Information Security Technology
+    institution: Sungshin Women's University
+    year: Autumn 2024
+    description:
+      - Postgraduate course using lectures, paper presentations, discussion, and projects
+  - title: AI Programming
+    institution: Soongsil University
+    year: Spring 2024
+    description:
+      - Postgraduate course
+  - title: Machine Learning-Based Communication Network Security
+    institution: Sungshin Women's University
+    year: Spring 2024
+    description:
+      - Postgraduate course
+
+evidence:
+  - Across 11 independently taught course sections audited from 2024 to 2026, final course-evaluation averages ranged from 4.41 to 4.88 out of 5, based on 373 responses, with a response-weighted mean of 4.60.
+  - In Spring 2026, Artificial Intelligence Basics received 4.60 out of 5 in the final evaluation with 95 of 100 students responding. Python Programming sections received 4.57 and 4.77 out of 5.
+  - Teaching combines conceptual foundations with coding, practical attack-and-defence exercises, research papers, presentations, and projects. Formal CQI feedback is used to improve pacing, materials, practical work, and explanation of technical terminology.
+
+additional:
+  - title: Convergence Technology Seminar
+    institution: Sungshin Women's University
+    year: Spring 2026
+    description:
+      - Two sessions in shared master's and doctoral seminars on LLM agents and healthcare AI agents
+  - title: "LLM Security: RAG Poisoning Attacks and Defences"
+    institution: Modulabs Everyone's Lab
+    year: Apr 2026
+    description:
+      - Invited lecture
+  - title: "AI Security: Leveraging Large Language Models to Address Security Challenges"
+    institution: Korea–Central Asia STEM Youth Silk Road programme
+    year: Jan 2026
+    description:
+      - Three-hour English-medium international lecture
+  - title: LLM-Based Automated Vulnerability Detection and Patch Generation
+    institution: Ulsan National Institute of Science and Technology
+    year: 2025
+    description:
+      - Invited lecture
+  - title: "AI Agents and Automation: Current Research Trends and Innovative Applications"
+    institution: Korea Information Processing Society
+    year: 2025
+    description:
+      - Invited short-course lecture
+  - title: AI Project Programme
+    institution: Soongsil University AI Convergence Research Institute
+    year: Jun–Aug 2024
+    description:
+      - Three invited teaching sessions
+  - title: AI Security
+    institution: Sungshin Women's University
+    year: Sep–Oct 2023
+    description:
+      - Six-week postgraduate lecture series covering adversarial examples, model extraction, federated-learning security, model inversion, and differential privacy

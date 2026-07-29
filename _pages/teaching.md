@@ -7,9 +7,9 @@ nav: true
 nav_order: 5
 ---
 
-{% assign university_teaching = site.data.cv | where: "title", "University Teaching" | first %}
-{% assign teaching_evidence = site.data.cv | where: "title", "Teaching Evidence and Development" | first %}
-{% assign additional_teaching = site.data.cv | where: "title", "Additional Teaching" | first %}
+{% assign university_teaching = site.data.teaching.university %}
+{% assign teaching_evidence = site.data.teaching.evidence %}
+{% assign additional_teaching = site.data.teaching.additional %}
 
 <section class="teaching-page">
   <section class="teaching-section" aria-labelledby="university-teaching-heading">
@@ -19,7 +19,7 @@ nav_order: 5
     </header>
 
     <div class="teaching-course-list">
-      {% for course in university_teaching.contents %}
+      {% for course in university_teaching %}
         <article class="teaching-course">
           <div class="teaching-course__main">
             <h3>{{ course.title }}</h3>
@@ -43,7 +43,7 @@ nav_order: 5
     </header>
 
     <ul class="teaching-evidence">
-      {% for item in teaching_evidence.contents %}
+      {% for item in teaching_evidence %}
         <li>{{ item }}</li>
       {% endfor %}
     </ul>
@@ -56,7 +56,7 @@ nav_order: 5
     </header>
 
     <div class="teaching-course-list">
-      {% for course in additional_teaching.contents %}
+      {% for course in additional_teaching %}
         <article class="teaching-course">
           <div class="teaching-course__main">
             <h3>{{ course.title }}</h3>
