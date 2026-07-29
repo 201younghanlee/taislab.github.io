@@ -120,20 +120,35 @@ table.institution {
     justify-content: flex-start;
 
     .table-cv {
+      width: auto;
       max-width: none;
     }
 
+    .table-cv tbody {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem 0.75rem;
+    }
+
+    .table-cv tr,
     td {
+      display: block;
+      padding: 0;
       text-align: left;
     }
 
     .badge {
       text-align: left;
     }
+
+    p.location {
+      margin-top: 0;
+    }
   }
 
   .cv-time-main {
-    margin-top: 0.25rem !important;
+    margin-top: 0 !important;
   }
 }
 
