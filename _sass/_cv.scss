@@ -12,8 +12,8 @@ table.table-cv {
 
 .cv-time-row {
   display: grid;
-  grid-template-columns: minmax(6.5rem, 8rem) minmax(0, 1fr);
-  column-gap: 0.75rem;
+  grid-template-columns: 1fr;
+  row-gap: 0.35rem;
   margin-right: 0;
   margin-left: 0;
 }
@@ -25,26 +25,41 @@ table.table-cv {
 
 .cv-time-meta {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 
   .table-cv {
-    width: 100%;
-    max-width: 12rem;
+    width: auto;
+    max-width: none;
   }
 
+  .table-cv tbody {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.75rem;
+  }
+
+  .table-cv tr,
   td {
-    text-align: right;
+    display: block;
+    padding: 0;
+    text-align: left;
   }
 
   .badge {
     max-width: 100%;
-    white-space: normal;
+    white-space: nowrap;
     line-height: 1.35;
-    text-align: right;
+    text-align: left;
+  }
+
+  p.location {
+    margin-top: 0;
   }
 }
 
 .cv-time-main {
+  margin-top: 0 !important;
   overflow-wrap: anywhere;
 
   > .items {
@@ -108,48 +123,6 @@ i.icondepartment {
 
 table.institution {
   margin-bottom: 1rem;
-}
-
-@media (max-width: 1199.98px) {
-  .cv-time-row {
-    grid-template-columns: 1fr;
-    row-gap: 0.35rem;
-  }
-
-  .cv-time-meta {
-    justify-content: flex-start;
-
-    .table-cv {
-      width: auto;
-      max-width: none;
-    }
-
-    .table-cv tbody {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.4rem 0.75rem;
-    }
-
-    .table-cv tr,
-    td {
-      display: block;
-      padding: 0;
-      text-align: left;
-    }
-
-    .badge {
-      text-align: left;
-    }
-
-    p.location {
-      margin-top: 0;
-    }
-  }
-
-  .cv-time-main {
-    margin-top: 0 !important;
-  }
 }
 
 /*****************************
