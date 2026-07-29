@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: People
-description: Professor, supervision, and collaboration at Trust AI & Security Lab
+hide_description: true
 nav: true
 nav_order: 2
 ---
@@ -20,8 +20,7 @@ nav_order: 2
         Security Engineering at Sungshin Women's University. His research connects security of AI
         with AI for security, spanning model and federated-learning security, privacy, secure code
         generation, vulnerability detection and repair, and assurance of LLM-based and agentic
-        systems. His work has appeared at ICSE, ESORICS, RAID, DAC and DATE and in
-        <em>IEEE Transactions on Artificial Intelligence</em> and <em>IEEE Access</em>.
+        systems.
       </p>
 
       <h4>Degree</h4>
@@ -113,23 +112,4 @@ nav_order: 2
       </div>
     </article>
   </div>
-</section>
-
-<section class="people-section">
-  <h2>Student Research and Supervision</h2>
-  <p>
-    TAIS Lab supervises research-led student projects in AI security, LLM systems, and secure
-    software engineering. Recent advised work includes three ASK 2026 proceedings papers on
-    narrative injection in multi-turn LLM dialogue, execution-centred evaluation of ROS 2 code
-    generation, and RAG attacks and defences. Earlier undergraduate supervision on LLM-based
-    obstructive-sleep-apnoea classification led to a conference poster and a 2025 journal article.
-  </p>
-</section>
-
-<section class="people-section people-contact">
-  <h2>Research Enquiries</h2>
-  <p>
-    For research collaboration and student project enquiries, contact
-    <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a>.
-  </p>
 </section>
