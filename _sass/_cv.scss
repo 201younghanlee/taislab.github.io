@@ -12,8 +12,8 @@ table.table-cv {
 
 .cv-time-row {
   display: grid;
-  grid-template-columns: minmax(9.5rem, 12rem) minmax(0, 1fr);
-  column-gap: 1.25rem;
+  grid-template-columns: minmax(6.5rem, 8rem) minmax(0, 1fr);
+  column-gap: 0.75rem;
   margin-right: 0;
   margin-left: 0;
 }
@@ -110,7 +110,7 @@ table.institution {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
   .cv-time-row {
     grid-template-columns: 1fr;
     row-gap: 0.35rem;
