@@ -1,0 +1,2 @@
+# Jekyll resolves these Liquid publication links during the site build.
+^file://.*/_pages/%7B%7B%20'/publications.*relative_url%20%7D%7D$

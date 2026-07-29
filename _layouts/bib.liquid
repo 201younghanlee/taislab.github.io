@@ -41,7 +41,23 @@
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {% assign primary_url = null %}
+    {% if entry.doi %}
+      {% capture primary_url %}https://doi.org/{{ entry.doi }}{% endcapture %}
+    {% elsif entry.website %}
+      {% assign primary_url = entry.website %}
+    {% elsif entry.pdf %}
+      {% assign primary_url = entry.pdf %}
+    {% elsif entry.arxiv %}
+      {% capture primary_url %}https://arxiv.org/abs/{{ entry.arxiv }}{% endcapture %}
+    {% endif %}
+    <div class="title">
+      {% if primary_url %}
+        <a href="{{ primary_url }}">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -127,6 +143,32 @@
       {% endif %}
     </div>
 
+    {% assign first_author = entry.author_array | first %}
+    <div class="author-roles" aria-label="Verified author roles">
+      {% if entry.cofirstauthors %}
+        <span class="author-role">
+          <strong>Co-first authors</strong>
+          {{ entry.cofirstauthors }}
+        </span>
+      {% elsif author_array_size == 1 %}
+        <span class="author-role">
+          <strong>Sole author</strong>
+          {{ first_author.first }} {{ first_author.last }}
+        </span>
+      {% else %}
+        <span class="author-role">
+          <strong>First author</strong>
+          {{ first_author.first }} {{ first_author.last }}
+        </span>
+      {% endif %}
+      {% if entry.correspondingauthors %}
+        <span class="author-role">
+          <strong>Corresponding author{% if entry.correspondingauthors contains ' and ' %}s{% endif %}</strong>
+          {{ entry.correspondingauthors }}
+        </span>
+      {% endif %}
+    </div>
+
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
@@ -153,6 +195,12 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.award %}
+      <div class="publication-award">
+        <strong>Award</strong>
+        {{ entry.award }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -161,6 +209,9 @@
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+      {% endif %}
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
@@ -210,7 +261,7 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Official</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
