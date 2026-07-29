@@ -3,186 +3,243 @@
   contents:
     - name: Full Name
       value: Younghan Lee
+    - name: Current Position
+      value: Assistant Professor (tenure-track), Sungshin Women's University
     - name: Email
       value: 201younghanlee@gmail.com
-    - name: Portfolio
-      value: 201younghanlee.github.io
+    - name: Website
+      value: www.taislab.co.kr
+    - name: ORCID
+      value: 0000-0001-8414-966X
+
+- title: Academic Profile
+  type: list
+  contents:
+    - AI-security researcher working on the security and assurance of learning-enabled systems. My research connects federated-learning and model security with secure code generation, automated vulnerability repair, and assurance of LLM-based and agentic systems.
 
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in Electrical and Computer Engineering
+    - title: PhD in Electrical and Computer Engineering
       institution: Seoul National University
       location: Seoul, Republic of Korea
-      year: 2017 - 2024
+      year: Mar 2017 – Feb 2024
       description:
         - "Thesis: Solving Contemporary Security Problems in Deep Learning"
-        - "Advisor: Yunheung Paek"
+        - "Advisor: Professor Yunheung Paek"
     - title: BEng in Electrical and Electronic Engineering
       institution: Imperial College London
       location: London, United Kingdom
-      year: 2013 - 2016
+      year: Sep 2013 – Jun 2016 (degree awarded Aug 2016)
 
-- title: Employment History
+- title: Academic Appointments
   type: time_table
   contents:
-    - title: Assistant Professor
+    - title: Assistant Professor (tenure-track)
       institution: Sungshin Women's University
       department: Department of Convergence Security Engineering
       location: Seoul, Republic of Korea
-      year: 2026 - Present
+      year: Sep 2024 – Present
     - title: Postdoctoral Researcher
       institution: Seoul National University
+      department: Department of Electrical and Computer Engineering
       location: Seoul, Republic of Korea
-      year: 2024 - 2026
+      year: Mar – Aug 2024
       description:
-        - "Advisor: Yunheung Paek"
+        - "Supervisor: Professor Yunheung Paek"
     - title: Lecturer
       institution: Soongsil University
       department: Department of AI Techno-Convergence
       location: Seoul, Republic of Korea
-      year: 2024
+      year: Mar – Aug 2024
     - title: Lecturer
       institution: Sungshin Women's University
       department: Department of Convergence Security Engineering
       location: Seoul, Republic of Korea
-      year: 2024
+      year: Mar – Aug 2024
 
-- title: Research Interest
+- title: Research Areas
   type: list
   contents:
-    - Security and Privacy in AI
-    - Adversarial Example Attacks
-    - Model Extraction Attacks
-    - Federated Learning
-    - Differential Privacy
-    - Multimodal Learning
-    - Robotics
+    - AI security and assurance
+    - Federated-learning and model security
+    - Secure code generation and automated vulnerability repair
+    - Security evaluation of LLM-based and agentic systems
+    - Privacy-preserving and applied AI
 
-- title: Publications
+- title: Selected Publications
   type: time_table
   contents:
+    - title: "VulScope: Software Vulnerability Detection via Local Context Analysis and Verification"
+      year: 2026
+      description:
+        - "Hyunjun Kim, Younghan Lee, Woorim Han, Subin Yun, Kang-Won Lee, and Yunheung Paek."
+        - "Empirical Software Engineering. Accepted for publication on 11 May 2026; final bibliographic details pending."
+    - title: "Rethinking the Capability of Fine-Tuned Language Models for Automated Vulnerability Repair"
+      year: 2026
+      description:
+        - "Woorim Han, Yeongjun Kwak, Miseon Yu, Kyeongmin Kim, Younghan Lee, Hyungon Moon, and Yunheung Paek."
+        - "48th IEEE/ACM International Conference on Software Engineering (ICSE). DOI 10.1145/3744916.3773167."
+        - "Younghan Lee and Yunheung Paek are corresponding authors."
+    - title: "PI-FD: Property Inference Attacks on Federated Learning With Distillation via Synthetic Data Generation"
+      year: 2026
+      description:
+        - "Yungi Cho, Miseon Yu, Jaejin Kim, Younghan Lee, and Yunheung Paek."
+        - "IEEE Access 14, 101398–101414. DOI 10.1109/ACCESS.2026.3700259."
+        - "Younghan Lee and Yunheung Paek are corresponding authors."
+    - title: "Poster: A Case Study on Automated Vulnerability Repair Using Pre-Trained Language Models"
+      year: 2025
+      description:
+        - "Woorim Han, Miseon Yu, Younghan Lee, Hyungon Moon, and Yunheung Paek."
+        - "IEEE Silicon Valley Cybersecurity Conference, 1–3. DOI 10.1109/SVCC65277.2025.11133621."
     - title: "VFLIP: A Backdoor Defense for Vertical Federated Learning via Identification and Purification"
       year: 2024
       description:
-        - "Yungi Cho, Woorim Han, Miseon Yu, Younghan Lee, Ho Bae, Yunheung Paek."
-        - "European Symposium on Research in Computer Security (ESORICS)."
+        - "Yungi Cho, Woorim Han, Miseon Yu, Younghan Lee, Ho Bae, and Yunheung Paek."
+        - "ESORICS, LNCS 14985, 291–312. DOI 10.1007/978-3-031-70903-6_15."
     - title: "FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models"
       year: 2023
       description:
-        - "Younghan Lee, Yungi Cho, Woorim Han, Ho Bae, Yunheung Paek."
-        - "European Symposium on Research in Computer Security (ESORICS)."
+        - "Younghan Lee, Yungi Cho, Woorim Han, Ho Bae, and Yunheung Paek."
+        - "ESORICS, LNCS 14347, 65–84. DOI 10.1007/978-3-031-51482-1_4."
     - title: "Exploring Clustered Federated Learning's Vulnerability against Property Inference Attack"
       year: 2023
       description:
-        - "Hyunjun Kim, Yungi Cho, Younghan Lee, Ho Bae, Yunheung Paek."
-        - "International Symposium on Research in Attacks, Intrusions and Defenses (RAID)."
+        - "Hyunjun Kim, Yungi Cho, Younghan Lee, Ho Bae, and Yunheung Paek."
+        - "RAID, 236–249. DOI 10.1145/3607199.3607218."
     - title: "Precise Extraction of Deep Learning Models via Side-Channel Attacks on Edge/Endpoint Devices"
       year: 2022
       description:
-        - "Younghan Lee, Sohee Jun, Yungi Cho, Woorim Han, Hyungon Moon, Yunheung Paek."
-        - "European Symposium on Research in Computer Security (ESORICS)."
-    - title: "A Pilot Study of Machine-Learning-Based Algorithms to Assist Integrated Care for Older Community-Dwelling Adults"
-      year: 2022
-      description:
-        - "So Im Ryu, Younghan Lee, Sohee Jun, Yunheung Paek, Hongsoo Kim, BeLong Cho, Yeon-Hwan Park."
-        - "Computers, Informatics, Nursing (CIN)."
+        - "Younghan Lee, Sohee Jun, Yungi Cho, Woorim Han, Hyungon Moon, and Yunheung Paek."
+        - "ESORICS, LNCS 13556, 364–383. DOI 10.1007/978-3-031-17143-7_18."
     - title: "Learn2Evade: Learning-Based Generative Model for Evading PDF Malware Classifiers"
       year: 2021
       description:
-        - "Ho Bae, Younghan Lee, Yohan Kim, Uiwon Hwang, Sungroh Yoon, Yunheung Paek."
-        - "IEEE Transactions on Artificial Intelligence."
-    - title: "Hawkware: Network Intrusion Detection Based on Behavior Analysis with ANNs on an IoT Device"
-      year: 2020
-      description:
-        - "Sunwoo Ahn, Hayoon Yi, Younghan Lee, Whoi Ree Ha, Giyeol Kim, Yunheung Paek."
-        - "Design Automation Conference (DAC)."
-    - title: "RiskiM: Toward Complete Kernel Protection with Hardware Support"
-      year: 2019
-      description:
-        - "Dongil Hwang, Myonghoon Yang, Seongil Jeon, Younghan Lee, Donghyun Kwon, Yunheung Paek."
-        - "Design, Automation & Test in Europe Conference & Exhibition (DATE)."
-    - title: "Mimicry Resilient Program Behavior Modeling with LSTM Based Branch Models"
-      year: 2018
-      description:
-        - "Hayoon Yi, Gyuwan Kim, Jangho Lee, Sunwoo Ahn, Younghan Lee, Sungroh Yoon, Yunheung Paek."
-        - "Deep Learning and Security Workshop."
+        - "Ho Bae, Younghan Lee, Yohan Kim, Uiwon Hwang, Sungroh Yoon, and Yunheung Paek."
+        - "IEEE Transactions on Artificial Intelligence 2(4), 299–313. DOI 10.1109/TAI.2021.3103139."
+        - "Ho Bae and Younghan Lee contributed equally."
 
-- title: Projects
+- title: Current Research
+  type: nested_list
+  contents:
+    - title: Security for LLM-based and agentic systems
+      items:
+        - Security evaluation of RAG, tool use, and multi-agent collaboration
+        - Policy-aware Infrastructure-as-Code generation
+        - Execution-grounded benchmarks for LLM-generated ROS 2 software
+    - title: AI for software security
+      items:
+        - Secure code generation
+        - Vulnerability detection and verification
+        - Automated vulnerability diagnosis and repair
+    - title: Model and federated-learning security
+      items:
+        - Property inference, model extraction, poisoning, backdoors, robust aggregation, and privacy
+
+- title: Selected Funded Research Projects
   type: time_table
   contents:
-    - title: Motion Tracking System for the Analysis of the Activity and Emotional Patterns of Pets with Deep Learning
-      institution: Seoul National University
-      year: 2023 - Present
-    - title: Development of Artificial Intelligence-Based Phishing Attack Prevention and Performance Verification Technology
-      institution: Seoul Business Agency
-      year: 2023 - Present
-    - title: Deriving Differential Privacy Concepts Applicable to National Statistical Data and Addressing Issues to Ensure the Usefulness of Statistical Analysis
-      institution: Statistics Korea
-      year: 2022 - Present
-    - title: Research on Applying Artificial Intelligence on Medical Data
-      institution: Ewha Womans University Medical Center
-      year: 2022 - Present
-    - title: Protecting Images from Cyber Phishing Attacks Using De-identification
-      institution: Cubig.ai
-      year: 2023
-    - title: Developing Differential Privacy Based Image Generation Artificial Intelligence
-      institution: Cubig.ai
-      year: 2023
-    - title: Research on Applying Machine Learning on Health and Nursing Data
-      institution: Seoul National University Hospital
-      year: 2020 - 2021
-    - title: Development of Intelligent Security Threat Countermeasure Solution Based on Artificial Intelligence
-      institution: Seoul Business Agency
-      year: 2019 - 2020
-    - title: Development of Programmable IPs and Unified SDK to Enable Building Security-Integrated Computer Systems
-      institution: Ministry of Science and ICT
-      year: 2017 - 2020
-    - title: Development of Cloud-Based Intelligent Security Technology for Providing Customized Security Services
-      institution: Ministry of Science and ICT
-      year: 2017 - 2019
-    - title: Development of Network Anomaly Detection
-      institution: SK Infosec
-      year: 2016 - 2017
+    - title: Multi-LLM-Agent Framework for Automated ROS Code Generation, Feedback, and Benchmarking
+      institution: Sungshin Women's University
+      year: Mar 2026 – Feb 2027
+      description:
+        - Principal Investigator
+    - title: Safe Code Patch Generation and Security Verification Using Feedback-Based LLMs
+      institution: Sungshin Women's University
+      year: Mar 2025 – Feb 2026
+      description:
+        - Principal Investigator, project H20250007
+    - title: AI-Based Automated Vulnerability Detection and Secure Code Generation
+      institution: IITP Cybersecurity International Collaborative R&D Programme
+      year: Jul 2024 – Dec 2026
+      description:
+        - Participating Researcher, project RS-2024-00439819
+    - title: Confidential-Computing-Based Privacy-Preserving Federated Learning Platform and Security Technologies
+      institution: National Research Foundation of Korea
+      year: Apr 2024 – Mar 2027
+      description:
+        - Participating Researcher, project RS-2024-00351898
+    - title: Quantitative Sleep Microstructure Optimisation for Cognitive and Emotional Enhancement
+      institution: National Research Foundation of Korea
+      year: May 2024 – Dec 2028
+      description:
+        - Participating Researcher, project RS-2024-00359247
 
-- title: Skills
-  type: list
-  contents:
-    - Python
-    - PyTorch
-    - C
-    - MATLAB
-
-- title: Teaching
+- title: University Teaching
   type: time_table
   contents:
-    - title: AI Programming (5048923201)
+    - title: Python Programming
+      institution: Sungshin Women's University
+      year: 2025, 2026
+    - title: Artificial Intelligence Basics
+      institution: Sungshin Women's University
+      year: 2025, 2026
+    - title: Cybersecurity Monitoring
+      institution: Sungshin Women's University
+      year: 2025
+    - title: Artificial Intelligence Security
+      institution: Sungshin Women's University
+      year: 2024, 2025
+    - title: Database Security
+      institution: Sungshin Women's University
+      year: 2024, 2025
+    - title: Introduction to Information Security Technology
+      institution: Sungshin Women's University
+      year: 2024
+      description:
+        - Postgraduate course
+    - title: AI Programming
       institution: Soongsil University
-      department: Department of AI Techno-Convergence
-      year: 2024 Spring
-    - title: Machine Learning-Based Communication Networks Security (1000717-001)
+      year: 2024
+      description:
+        - Postgraduate course
+    - title: Machine Learning-Based Communication Network Security
       institution: Sungshin Women's University
-      department: Department of Convergence Security Engineering
-      year: 2024 Spring
-    - title: Seminars on Security and Privacy in Deep Learning
-      institution: Sungshin Women's University
-      department: Department of Convergence Security Engineering
-      year: 2023
-    - title: Seminars on Security and Privacy in Deep Learning
-      institution: Chonnam National University
-      department: College of AI Convergence
-      year: 2023
-    - title: Seminars on Theory of Information Security
-      institution: Ewha Womans University
-      department: ELTEC College of Engineering, Cyber Security
-      year: 2022
-    - title: Teaching Assistant in Cyber Security and Blockchain
-      institution: Seoul National University
-      department: Department of Engineering
-      year: 2019
+      year: 2024
+      description:
+        - Postgraduate course
 
-- title: Language
+- title: Teaching Evidence and Development
   type: list
   contents:
-    - English
+    - Across 11 independently taught course sections audited from 2024 to 2026, final course-evaluation averages ranged from 4.41 to 4.88 out of 5, based on 373 responses, with a response-weighted mean of 4.60.
+    - In Spring 2026, Artificial Intelligence Basics received 4.60 out of 5 in the final evaluation with 95 of 100 students responding. Python Programming sections received 4.57 and 4.77 out of 5.
+    - Teaching combines conceptual foundations with coding, practical attack-and-defence exercises, research papers, presentations, and projects. Formal CQI feedback is used to improve pacing, materials, practical work, and explanation of technical terminology.
+
+- title: Student Supervision and Examination
+  type: list
+  contents:
+    - Advised three student papers published in the ASK 2026 proceedings on narrative injection, execution-centred ROS 2 code generation, and RAG security.
+    - Supervised a 2025 undergraduate research project on LLM-based obstructive-sleep-apnoea severity classification that led to a conference poster and journal article.
+    - Master's thesis examiner for work on SBOM-based risk assessment in software-supply-chain security, 2025.
+
+- title: Academic and Professional Service
+  type: list
+  contents:
+    - Reviewer, IEEE Transactions on Dependable and Secure Computing, 2025
+    - Reviewer, ACM Transactions on Software Engineering and Methodology, 2025
+    - Reviewer, Journal of Information Processing Systems, 2025–2026
+    - Executive Secretary, Artificial Intelligence System Research Group, Korea Information Processing Society, 2024–present
+    - Programme Organising Committee, 2026 Joint Workshop of the AI Systems and Data Security & Privacy Research Groups
+    - Session Chair, ASK 2026 and ACK 2025
+
+- title: Selected Intellectual Property and Impact
+  type: list
+  contents:
+    - "Korean Patent Application 10-2026-0016350, filed 28 January 2026: multi-LLM clinical decision support for automated interpretation of sleep questionnaires and sleep-disorder correlation search."
+    - "Korean Patent Family 10-2025-0189598 / 10-2026-0110736, filed 3 December 2025 and 17 June 2026: backdoor-robust multimodal-model training and inference."
+    - External advisory engagement with the Software Policy Research Institute on the impact of AI development on the software industry, completed February 2026.
+
+- title: Selected Invited Teaching and Talks
+  type: list
+  contents:
+    - "AI Security: Leveraging Large Language Models to Address Security Challenges, Korea–Central Asia STEM Youth Silk Road programme, January 2026."
+    - "LLM Security: RAG Poisoning Attacks and Defences, Modulabs Everyone's Lab, April 2026."
+    - "LLM-Based Automated Vulnerability Detection and Patch Generation, Ulsan National Institute of Science and Technology, 2025."
+    - "AI Agents and Automation: Current Research Trends and Innovative Applications, Korea Information Processing Society, 2025."
+
+- title: Languages
+  type: list
+  contents:
     - Korean
+    - English

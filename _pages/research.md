@@ -9,7 +9,10 @@ nav_order: 3
 
 <section class="research-page">
   <p class="research-intro">
-    TAIS Lab studies trustworthy AI systems from both sides: using AI to improve security, and securing AI against emerging threats. Our work builds on published research in federated learning robustness, privacy leakage, model extraction, adversarial malware, IoT intrusion detection, and hardware-assisted system security.
+    TAIS Lab studies trustworthy AI systems from both sides: using AI to improve security, and securing
+    AI against emerging threats. Our current programme connects published work in model and
+    federated-learning security with secure code generation, automated vulnerability repair, RAG
+    security, and execution-grounded assurance of LLM-based and agentic systems.
   </p>
 
   <div class="research-topics">
@@ -71,7 +74,10 @@ nav_order: 3
       </div>
       <h2>Automated Vulnerability Repair, Secure Code Generation, RAG Security, Red Teaming</h2>
       <p>
-        We develop automated workflows that find weaknesses, generate repairs, and verify whether the patched system is actually safer. This direction extends lessons from kernel integrity monitoring, branch-trace behavior modeling, IoT intrusion detection, and adversarial malware generation into secure code generation, RAG security, and practical red teaming.
+        We develop automated workflows that find weaknesses, generate repairs, and verify whether
+        the patched system is actually safer. This direction combines local-context vulnerability
+        analysis, functional testing, policy checks, and adversarial evaluation to move from
+        plausible output to evidence of software correctness and security.
       </p>
     </article>
 
