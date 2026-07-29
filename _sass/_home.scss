@@ -123,6 +123,11 @@
   color: var(--global-text-color-light);
 }
 
+.news .news-venue {
+  color: var(--global-theme-color);
+  font-weight: 700;
+}
+
 @media (max-width: 575.98px) {
   .home-hero {
     min-height: 74vh;
