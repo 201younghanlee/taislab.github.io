@@ -70,7 +70,7 @@
     - Security and assurance of LLM-based and agentic systems
     - Kernel code fault localization
 
-- title: Selected Publications
+- title: Selected International Publications
   type: time_table
   contents:
     - title: "VulScope: Software Vulnerability Detection via Local Context Analysis and Verification"
@@ -99,15 +99,6 @@
         - "Role: Co-corresponding author."
       linkitems:
         - link: /publications/#cho2026pifd
-          linkname: Publication
-    - title: "Data Reconstruction Attacks against Privacy-Preserving Vertical Federated Learning"
-      year: 2026
-      description:
-        - "Yungi Cho, Miseon Yu, Hyunjun Kim, Younghan Lee, and Yunheung Paek."
-        - "Accepted regular paper, AICompS 2025; forthcoming in Artificial Intelligence Computing and Systems, CCIS 2961, Springer, 2026."
-        - "Role: Co-corresponding author."
-      linkitems:
-        - link: /publications/#cho2026datareconstruction
           linkname: Publication
     - title: "Poster: A Case Study on Automated Vulnerability Repair Using Pre-Trained Language Models"
       year: 2025
@@ -149,16 +140,6 @@
 - title: Selected Funded Research Projects
   type: time_table
   contents:
-    - title: Multi-LLM-Agent Framework for Automated ROS Code Generation, Feedback, and Benchmarking
-      institution: Sungshin Women's University
-      year: Mar 2026 – Feb 2027
-      description:
-        - Principal Investigator
-    - title: Safe Code Patch Generation and Security Verification Using Feedback-Based LLMs
-      institution: Sungshin Women's University
-      year: Mar 2025 – Feb 2026
-      description:
-        - Principal Investigator, project H20250007
     - title: AI-Based Automated Vulnerability Detection and Secure Code Generation
       institution: IITP Cybersecurity International Collaborative R&D Programme
       year: Jul 2024 – Dec 2026
@@ -217,7 +198,7 @@
       description:
         - Multi-LLM clinical decision support for automated interpretation of sleep questionnaires and sleep-disorder correlation search
         - "Co-inventors: Jooyoung Kim and Younghan Lee"
-    - title: Korean Patent Family 10-2025-0189598 / 10-2026-0110736
+    - title: Korean Patent Applications 10-2025-0189598 and 10-2026-0110736
       year: 3 Dec 2025 / 17 Jun 2026
       description:
         - Backdoor-robust multimodal-model training and inference
