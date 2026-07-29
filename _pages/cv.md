@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 6
-description: Academic profile, appointments, research, teaching, supervision, and service
+description: Academic profile, employment, research, supervision, service, and impact
 toc:
   sidebar: left
 ---
