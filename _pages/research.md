@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: Research
-description: Automated vulnerability repair, vulnerability detection, secure code generation, and federated learning security.
+description: Research in secure software engineering, LLM security, and AI/ML security.
 nav: true
 nav_order: 3
 ---
@@ -15,12 +15,12 @@ nav_order: 3
   >
     <header class="research-track__heading">
       <div>
-        <p class="research-eyebrow">Core research areas</p>
-        <h2 id="core-research-heading">LLM4SEC and AI/ML security</h2>
+        <p class="research-eyebrow">LLMs for security</p>
+        <h2 id="core-research-heading">LLM4SEC</h2>
       </div>
     </header>
 
-    <div class="research-topic-grid research-topic-grid--four">
+    <div class="research-topic-grid">
       <article class="research-topic" id="automated-vulnerability-repair">
         <span class="research-topic__number">01</span>
         <h3>Automated Vulnerability Repair</h3>
@@ -83,23 +83,21 @@ nav_order: 3
         </p>
       </article>
 
-      <article class="research-topic" id="federated-learning-security">
+      <article class="research-topic" id="kernel-code-fault-localization">
         <span class="research-topic__number">04</span>
-        <h3>Federated Learning Security</h3>
+        <h3>Kernel Code Fault Localization</h3>
         <p class="research-topic__description">
-          We study privacy and integrity risks in federated learning, including inference,
-          inversion, backdoor, and Byzantine attacks, together with practical defences.
+          We are building a benchmark for locating faults in kernel code, where low-level behaviour
+          and long-range dependencies challenge conventional methods.
         </p>
         <ul class="research-keywords">
-          <li>Privacy Leakage</li>
-          <li>Byzantine Robustness</li>
-          <li>Backdoor Defence</li>
+          <li>Linux Kernel</li>
+          <li>Fault Localization</li>
+          <li>Benchmarking</li>
         </ul>
-        <p class="research-topic__paper">
-          <span>Related paper</span>
-          <a href="{{ '/publications/' | relative_url }}#lee2023flguard">
-            FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models
-          </a>
+        <p class="research-topic__paper research-topic__paper--ongoing">
+          <span>Current work</span>
+          LLM-based fault localization for Linux kernel code
         </p>
       </article>
     </div>
@@ -112,12 +110,12 @@ nav_order: 3
   >
     <header class="research-track__heading">
       <div>
-        <p class="research-eyebrow">Security for LLMs</p>
-        <h2 id="sec4llm-heading">SEC4LLM</h2>
+        <p class="research-eyebrow">Security for LLMs and AI/ML systems</p>
+        <h2 id="sec4llm-heading">SEC4LLM &amp; AI/ML Security</h2>
       </div>
     </header>
 
-    <div class="research-topic-grid research-topic-grid--three">
+    <div class="research-topic-grid">
       <article class="research-topic">
         <span class="research-topic__number">01</span>
         <h3>RAG Security</h3>
@@ -175,36 +173,29 @@ nav_order: 3
           </a>
         </p>
       </article>
-    </div>
-  </section>
 
-  <section class="research-foundations" aria-labelledby="related-areas-heading">
-    <header class="research-foundations__heading">
-      <p class="research-eyebrow">Related areas</p>
-      <h2 id="related-areas-heading">Kernel code and model security</h2>
-    </header>
-
-    <div class="research-topic-grid research-topic-grid--two">
-      <article class="research-topic research-topic--foundation">
-        <span class="research-topic__number">A</span>
-        <h3>Kernel Code Fault Localization</h3>
+      <article class="research-topic" id="federated-learning-security">
+        <span class="research-topic__number">04</span>
+        <h3>Federated Learning Security</h3>
         <p class="research-topic__description">
-          We are building a benchmark for locating faults in kernel code, where low-level behaviour
-          and long-range dependencies challenge conventional methods.
+          We study privacy and integrity risks in federated learning, including inference,
+          inversion, backdoor, and Byzantine attacks, together with practical defences.
         </p>
         <ul class="research-keywords">
-          <li>Linux Kernel</li>
-          <li>Fault Localization</li>
-          <li>Benchmarking</li>
+          <li>Privacy Leakage</li>
+          <li>Byzantine Robustness</li>
+          <li>Backdoor Defence</li>
         </ul>
-        <p class="research-topic__paper research-topic__paper--ongoing">
-          <span>Current work</span>
-          LLM-based fault localization for Linux kernel code
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/' | relative_url }}#lee2023flguard">
+            FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models
+          </a>
         </p>
       </article>
 
-      <article class="research-topic research-topic--foundation">
-        <span class="research-topic__number">B</span>
+      <article class="research-topic">
+        <span class="research-topic__number">05</span>
         <h3>Model Extraction</h3>
         <p class="research-topic__description">
           We investigate how deployed models can be reconstructed through queries or
