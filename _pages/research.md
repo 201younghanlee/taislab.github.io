@@ -29,7 +29,6 @@ nav_order: 3
           requirements and security constraints. Validation is used to identify weaknesses early.
         </p>
         <ul class="research-keywords">
-          <li>Security Requirements</li>
           <li>Security-Aware Generation</li>
           <li>Functional Correctness</li>
           <li>Code Validation</li>
@@ -49,7 +48,6 @@ nav_order: 3
         </p>
         <ul class="research-keywords">
           <li>Local Context Analysis</li>
-          <li>Static Analysis</li>
           <li>Candidate Verification</li>
           <li>False-Positive Reduction</li>
         </ul>
@@ -70,9 +68,7 @@ nav_order: 3
         </p>
         <ul class="research-keywords">
           <li>Linux Kernel</li>
-          <li>LLM Agents</li>
           <li>Fault Localization</li>
-          <li>Context-Aware Reasoning</li>
           <li>Benchmarking</li>
         </ul>
         <p class="research-topic__paper research-topic__paper--ongoing">
@@ -91,7 +87,6 @@ nav_order: 3
         <ul class="research-keywords">
           <li>Patch Generation</li>
           <li>Root-Cause Repair</li>
-          <li>Iterative Re-Localization</li>
           <li>Build and Test Validation</li>
         </ul>
         <p class="research-topic__paper">
@@ -116,7 +111,7 @@ nav_order: 3
       </div>
     </header>
 
-    <div class="research-topic-grid research-topic-grid--four">
+    <div class="research-topic-grid research-topic-grid--three">
       <article class="research-topic">
         <span class="research-topic__number">01</span>
         <h3>RAG Security</h3>
@@ -128,7 +123,6 @@ nav_order: 3
           <li>Retrieval Poisoning</li>
           <li>Prompt Injection</li>
           <li>Attack–Defence Evaluation</li>
-          <li>Response Robustness</li>
         </ul>
         <p class="research-topic__paper">
           <span>Related paper</span>
@@ -140,27 +134,6 @@ nav_order: 3
 
       <article class="research-topic">
         <span class="research-topic__number">02</span>
-        <h3>LLM Dialogue Security</h3>
-        <p class="research-topic__description">
-          We study how adversarial instructions introduced across multiple turns can shift a
-          model’s responses. Our work measures this drift and investigates how to detect it.
-        </p>
-        <ul class="research-keywords">
-          <li>Narrative Injection</li>
-          <li>Response Drift</li>
-          <li>Multi-Turn Attacks</li>
-          <li>Drift Detection</li>
-        </ul>
-        <p class="research-topic__paper">
-          <span>Related paper</span>
-          <a href="{{ '/publications/domestic/' | relative_url }}#kim2026narrative">
-            Analysis and Detection Framework for Response Drift under Narrative Injection in Multi-Turn LLM Dialogues
-          </a>
-        </p>
-      </article>
-
-      <article class="research-topic">
-        <span class="research-topic__number">03</span>
         <h3>IaC Agent Assurance</h3>
         <p class="research-topic__description">
           We evaluate AI-generated infrastructure-as-code beyond syntax and execution, asking
@@ -169,8 +142,7 @@ nav_order: 3
         <ul class="research-keywords">
           <li>Terraform</li>
           <li>Intent Alignment</li>
-          <li>Policy-Aware Evaluation</li>
-          <li>Deployment Validation</li>
+          <li>Security Policy Compliance</li>
         </ul>
         <p class="research-topic__paper research-topic__paper--ongoing">
           <span>Current work</span>
@@ -179,17 +151,16 @@ nav_order: 3
       </article>
 
       <article class="research-topic">
-        <span class="research-topic__number">04</span>
+        <span class="research-topic__number">03</span>
         <h3>ROS 2 Agent Assurance</h3>
         <p class="research-topic__description">
           We develop execution-grounded evaluations for AI-generated ROS 2 software, covering build
           and launch success, interface correctness, and expected runtime behaviour.
         </p>
         <ul class="research-keywords">
-          <li>Robot Software Generation</li>
-          <li>Build and Launch</li>
+          <li>ROS 2</li>
           <li>Interface Correctness</li>
-          <li>Execution-Centred Evaluation</li>
+          <li>Runtime Validation</li>
         </ul>
         <p class="research-topic__paper">
           <span>Related paper</span>
@@ -216,12 +187,9 @@ nav_order: 3
           inversion, backdoor, and Byzantine attacks, together with practical defences.
         </p>
         <ul class="research-keywords">
-          <li>Byzantine-Robust FL</li>
+          <li>Privacy Leakage</li>
+          <li>Byzantine Robustness</li>
           <li>Backdoor Defence</li>
-          <li>Property Inference</li>
-          <li>Data Reconstruction</li>
-          <li>Model Inversion</li>
-          <li>Privacy-Preserving FL</li>
         </ul>
         <p class="research-topic__paper">
           <span>Related paper</span>
@@ -239,12 +207,9 @@ nav_order: 3
           implementation-level leakage, and how such information exposure can be limited.
         </p>
         <ul class="research-keywords">
-          <li>Side-Channel Extraction</li>
-          <li>Non-Query Extraction</li>
+          <li>Side-Channel Leakage</li>
           <li>Architecture Recovery</li>
-          <li>Image-Dimension Leakage</li>
           <li>Model IP Protection</li>
-          <li>Attack and Defence</li>
         </ul>
         <p class="research-topic__paper">
           <span>Related paper</span>
@@ -255,16 +220,6 @@ nav_order: 3
       </article>
     </div>
   </section>
-
-  <aside class="research-methods" aria-label="Shared research methods">
-    <strong>Shared methods</strong>
-    <ul>
-      <li>Threat Modelling</li>
-      <li>Execution-Based Evaluation</li>
-      <li>Verification</li>
-      <li>Reproducible Benchmarks</li>
-    </ul>
-  </aside>
 
   <p class="research-publications-link">
     <a href="{{ '/publications/' | relative_url }}">View the full publication record</a>
