@@ -194,25 +194,6 @@ nav_order: 3
         </p>
       </article>
 
-      <article class="research-topic">
-        <span class="research-topic__number">05</span>
-        <h3>Model Extraction</h3>
-        <p class="research-topic__description">
-          We investigate how deployed models can be reconstructed through queries or
-          implementation-level leakage, and how such information exposure can be limited.
-        </p>
-        <ul class="research-keywords">
-          <li>Side-Channel Leakage</li>
-          <li>Architecture Recovery</li>
-          <li>Model IP Protection</li>
-        </ul>
-        <p class="research-topic__paper">
-          <span>Related paper</span>
-          <a href="{{ '/publications/' | relative_url }}#lee2022precise">
-            Precise Extraction of Deep Learning Models via Side-Channel Attacks on Edge/Endpoint Devices
-          </a>
-        </p>
-      </article>
     </div>
   </section>
 
