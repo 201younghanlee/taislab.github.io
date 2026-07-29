@@ -120,7 +120,9 @@
 
 .home-news .news p {
   margin: 0;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .news .news-venue {
