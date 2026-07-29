@@ -1,0 +1,106 @@
+.teaching-page {
+  --teaching-ink: var(--global-text-color);
+  --teaching-muted: var(--global-text-color-light);
+  --teaching-rule: var(--global-divider-color);
+  margin: 1rem 0 3rem;
+}
+
+.teaching-section {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  scroll-margin-top: 6rem;
+}
+
+.teaching-section:first-child {
+  margin-top: 1.5rem;
+}
+
+.teaching-section__heading {
+  margin-bottom: 1.25rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--teaching-ink);
+
+  h2 {
+    margin: 0;
+    color: var(--teaching-ink);
+    font-size: clamp(1.55rem, 3vw, 2.15rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+  }
+}
+
+.teaching-eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--teaching-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.teaching-course-list {
+  border-top: 1px solid var(--teaching-rule);
+}
+
+.teaching-course {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem 2rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--teaching-rule);
+
+  h3 {
+    margin: 0;
+    color: var(--teaching-ink);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  p {
+    margin: 0.3rem 0 0;
+    color: var(--teaching-muted);
+    font-size: 0.87rem;
+    line-height: 1.55;
+  }
+}
+
+.teaching-course__detail {
+  color: var(--teaching-ink) !important;
+}
+
+.teaching-course__year {
+  margin-top: 0 !important;
+  color: var(--teaching-ink) !important;
+  font-size: 0.8rem !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.teaching-evidence {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--teaching-rule);
+  list-style: none;
+
+  li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--teaching-rule);
+    color: var(--teaching-ink);
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .teaching-course {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .teaching-course__year {
+    grid-row: 1;
+  }
+}

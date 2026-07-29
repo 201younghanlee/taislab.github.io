@@ -2,44 +2,50 @@
 layout: page
 permalink: /research/
 title: Research
-description: Security with LLMs and security for LLMs.
+description: Automated vulnerability repair, vulnerability detection, secure code generation, and federated learning security.
 nav: true
 nav_order: 3
 ---
 
 <section class="research-page">
   <section
-    class="research-track research-track--llm4sec"
-    id="llm4sec"
-    aria-labelledby="llm4sec-heading"
+    class="research-track"
+    id="core-research"
+    aria-labelledby="core-research-heading"
   >
     <header class="research-track__heading">
       <div>
-        <p class="research-eyebrow">LLMs for security</p>
-        <h2 id="llm4sec-heading">LLM4SEC</h2>
+        <p class="research-eyebrow">Core research areas</p>
+        <h2 id="core-research-heading">LLM4SEC and AI/ML security</h2>
       </div>
     </header>
 
     <div class="research-topic-grid research-topic-grid--four">
-      <article class="research-topic">
+      <article class="research-topic" id="automated-vulnerability-repair">
         <span class="research-topic__number">01</span>
-        <h3>Secure Code Generation</h3>
+        <h3>Automated Vulnerability Repair</h3>
         <p class="research-topic__description">
-          We study how language models can generate code that satisfies both functional
-          requirements and security constraints. Validation is used to identify weaknesses early.
+          We investigate whether language models can repair vulnerable code without changing its
+          intended behaviour. Candidate patches are tested for security and functional correctness.
         </p>
         <ul class="research-keywords">
-          <li>Security-Aware Generation</li>
-          <li>Functional Correctness</li>
-          <li>Code Validation</li>
+          <li>Patch Generation</li>
+          <li>Root-Cause Repair</li>
+          <li>Build and Test Validation</li>
         </ul>
         <p class="research-topic__paper research-topic__paper--ongoing">
           <span>Current work</span>
-          Secure code generation under functional and security requirements
+          DeepAVR: Deep Analysis via Multi-Agent Collaboration for Automated Vulnerability Repair
+        </p>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/' | relative_url }}#han2026rethinking">
+            Rethinking the Capability of Fine-Tuned Language Models for Automated Vulnerability Repair
+          </a>
         </p>
       </article>
 
-      <article class="research-topic">
+      <article class="research-topic" id="vulnerability-detection">
         <span class="research-topic__number">02</span>
         <h3>Vulnerability Detection</h3>
         <p class="research-topic__description">
@@ -59,44 +65,40 @@ nav_order: 3
         </p>
       </article>
 
-      <article class="research-topic">
+      <article class="research-topic" id="secure-code-generation">
         <span class="research-topic__number">03</span>
-        <h3>Kernel Code Fault Localization</h3>
+        <h3>Secure Code Generation</h3>
         <p class="research-topic__description">
-          We are building a benchmark for locating faults in kernel code, where low-level behaviour
-          and long-range dependencies challenge conventional methods.
+          We study how language models can generate code that satisfies both functional
+          requirements and security constraints. Validation is used to identify weaknesses early.
         </p>
         <ul class="research-keywords">
-          <li>Linux Kernel</li>
-          <li>Fault Localization</li>
-          <li>Benchmarking</li>
+          <li>Security-Aware Generation</li>
+          <li>Functional Correctness</li>
+          <li>Code Validation</li>
         </ul>
         <p class="research-topic__paper research-topic__paper--ongoing">
           <span>Current work</span>
-          LLM-based fault localization for Linux kernel code
+          Secure code generation under functional and security requirements
         </p>
       </article>
 
-      <article class="research-topic">
+      <article class="research-topic" id="federated-learning-security">
         <span class="research-topic__number">04</span>
-        <h3>Automated Vulnerability Repair</h3>
+        <h3>Federated Learning Security</h3>
         <p class="research-topic__description">
-          We investigate whether language models can repair vulnerable code without changing its
-          intended behaviour. Candidate patches are tested for security and functional correctness.
+          We study privacy and integrity risks in federated learning, including inference,
+          inversion, backdoor, and Byzantine attacks, together with practical defences.
         </p>
         <ul class="research-keywords">
-          <li>Patch Generation</li>
-          <li>Root-Cause Repair</li>
-          <li>Build and Test Validation</li>
+          <li>Privacy Leakage</li>
+          <li>Byzantine Robustness</li>
+          <li>Backdoor Defence</li>
         </ul>
-        <p class="research-topic__paper research-topic__paper--ongoing">
-          <span>Current work</span>
-          DeepAVR: Deep Analysis via Multi-Agent Collaboration for Automated Vulnerability Repair
-        </p>
         <p class="research-topic__paper">
           <span>Related paper</span>
-          <a href="{{ '/publications/' | relative_url }}#han2026rethinking">
-            Rethinking the Capability of Fine-Tuned Language Models for Automated Vulnerability Repair
+          <a href="{{ '/publications/' | relative_url }}#lee2023flguard">
+            FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models
           </a>
         </p>
       </article>
@@ -176,30 +178,28 @@ nav_order: 3
     </div>
   </section>
 
-  <section class="research-foundations" aria-labelledby="foundations-heading">
+  <section class="research-foundations" aria-labelledby="related-areas-heading">
     <header class="research-foundations__heading">
-      <p class="research-eyebrow">AI/ML security foundations</p>
-      <h2 id="foundations-heading">Privacy, robustness, and adversarial threats</h2>
+      <p class="research-eyebrow">Related areas</p>
+      <h2 id="related-areas-heading">Kernel code and model security</h2>
     </header>
 
     <div class="research-topic-grid research-topic-grid--two">
       <article class="research-topic research-topic--foundation">
         <span class="research-topic__number">A</span>
-        <h3>Federated Learning Security</h3>
+        <h3>Kernel Code Fault Localization</h3>
         <p class="research-topic__description">
-          We study privacy and integrity risks in federated learning, including inference,
-          inversion, backdoor, and Byzantine attacks, together with practical defences.
+          We are building a benchmark for locating faults in kernel code, where low-level behaviour
+          and long-range dependencies challenge conventional methods.
         </p>
         <ul class="research-keywords">
-          <li>Privacy Leakage</li>
-          <li>Byzantine Robustness</li>
-          <li>Backdoor Defence</li>
+          <li>Linux Kernel</li>
+          <li>Fault Localization</li>
+          <li>Benchmarking</li>
         </ul>
-        <p class="research-topic__paper">
-          <span>Related paper</span>
-          <a href="{{ '/publications/' | relative_url }}#lee2023flguard">
-            FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models
-          </a>
+        <p class="research-topic__paper research-topic__paper--ongoing">
+          <span>Current work</span>
+          LLM-based fault localization for Linux kernel code
         </p>
       </article>
 
