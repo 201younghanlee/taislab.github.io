@@ -2,26 +2,12 @@
 layout: page
 permalink: /research/
 title: Research
-description: LLM4SEC, SEC4LLM, federated learning security, and model extraction at Trust AI & Security Lab
+description: Security with LLMs and security for LLMs.
 nav: true
 nav_order: 3
 ---
 
 <section class="research-page">
-  <header class="research-overview">
-    <p class="research-eyebrow">Research map</p>
-    <h2>Security with LLMs. Security for LLMs.</h2>
-    <p>
-      TAIS Lab connects secure software engineering, LLM and agent security, federated learning
-      security, and model extraction.
-    </p>
-    <div class="research-direction" aria-label="Two connected research directions">
-      <strong>LLM4SEC</strong>
-      <span aria-hidden="true">↔</span>
-      <strong>SEC4LLM</strong>
-    </div>
-  </header>
-
   <section
     class="research-track research-track--llm4sec"
     id="llm4sec"
