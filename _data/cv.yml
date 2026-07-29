@@ -63,12 +63,8 @@
 - title: Research Areas
   type: list
   contents:
-    - Automated vulnerability repair
-    - Vulnerability detection and verification
-    - Secure code generation
-    - Federated-learning security
-    - Security and assurance of LLM-based and agentic systems
-    - Kernel code fault localization
+    - "LLM4SEC (LLMs for Security): automated vulnerability repair, vulnerability detection, secure code generation, and kernel code fault localization."
+    - "SEC4LLM & AI/ML Security: RAG security, IaC agent assurance, ROS 2 agent assurance, and federated learning security."
 
 - title: Selected International Publications
   type: time_table
