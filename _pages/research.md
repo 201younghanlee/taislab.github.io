@@ -41,28 +41,50 @@ nav_order: 3
       <article class="research-topic">
         <span class="research-topic__number">01</span>
         <h3>Secure Code Generation</h3>
+        <p class="research-topic__description">
+          We study how language models can generate code that satisfies both functional
+          requirements and security constraints. Validation is used to identify weaknesses early.
+        </p>
         <ul class="research-keywords">
           <li>Security Requirements</li>
           <li>Security-Aware Generation</li>
           <li>Functional Correctness</li>
           <li>Code Validation</li>
         </ul>
+        <p class="research-topic__paper research-topic__paper--ongoing">
+          <span>Current work</span>
+          Secure code generation under functional and security requirements
+        </p>
       </article>
 
       <article class="research-topic">
         <span class="research-topic__number">02</span>
         <h3>Vulnerability Detection</h3>
+        <p class="research-topic__description">
+          We combine local code context with validation to identify security flaws while reducing
+          false positives. The goal is to make automated findings more precise and actionable.
+        </p>
         <ul class="research-keywords">
           <li>Local Context Analysis</li>
           <li>Static Analysis</li>
           <li>Candidate Verification</li>
           <li>False-Positive Reduction</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/' | relative_url }}#kim2026vulscope">
+            VulScope: Software Vulnerability Detection via Local Context Analysis and Verification
+          </a>
+        </p>
       </article>
 
       <article class="research-topic">
         <span class="research-topic__number">03</span>
         <h3>Kernel Code Fault Localization</h3>
+        <p class="research-topic__description">
+          We are building a benchmark for locating faults in kernel code, where low-level behaviour
+          and long-range dependencies challenge conventional methods.
+        </p>
         <ul class="research-keywords">
           <li>Linux Kernel</li>
           <li>LLM Agents</li>
@@ -70,17 +92,31 @@ nav_order: 3
           <li>Context-Aware Reasoning</li>
           <li>Benchmarking</li>
         </ul>
+        <p class="research-topic__paper research-topic__paper--ongoing">
+          <span>Current work</span>
+          LLM-based fault localization for Linux kernel code
+        </p>
       </article>
 
       <article class="research-topic">
         <span class="research-topic__number">04</span>
         <h3>Automated Vulnerability Repair</h3>
+        <p class="research-topic__description">
+          We investigate whether language models can repair vulnerable code without changing its
+          intended behaviour. Candidate patches are tested for security and functional correctness.
+        </p>
         <ul class="research-keywords">
           <li>Patch Generation</li>
           <li>Root-Cause Repair</li>
           <li>Iterative Re-Localization</li>
           <li>Build and Test Validation</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/' | relative_url }}#han2026rethinking">
+            Rethinking the Capability of Fine-Tuned Language Models for Automated Vulnerability Repair
+          </a>
+        </p>
       </article>
     </div>
   </section>
@@ -104,45 +140,83 @@ nav_order: 3
       <article class="research-topic">
         <span class="research-topic__number">01</span>
         <h3>RAG Security</h3>
+        <p class="research-topic__description">
+          We examine attacks on retrieval-augmented generation, including malicious or misleading
+          retrieved content. Attacks and defences are compared under shared evaluation criteria.
+        </p>
         <ul class="research-keywords">
           <li>Retrieval Poisoning</li>
           <li>Prompt Injection</li>
           <li>Attack–Defence Evaluation</li>
           <li>Response Robustness</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/domestic/' | relative_url }}#kim2026ragsecurity">
+            Security Analysis and Defense Comparison in RAG
+          </a>
+        </p>
       </article>
 
       <article class="research-topic">
         <span class="research-topic__number">02</span>
         <h3>LLM Dialogue Security</h3>
+        <p class="research-topic__description">
+          We study how adversarial instructions introduced across multiple turns can shift a
+          model’s responses. Our work measures this drift and investigates how to detect it.
+        </p>
         <ul class="research-keywords">
           <li>Narrative Injection</li>
           <li>Response Drift</li>
           <li>Multi-Turn Attacks</li>
           <li>Drift Detection</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/domestic/' | relative_url }}#kim2026narrative">
+            Analysis and Detection Framework for Response Drift under Narrative Injection in Multi-Turn LLM Dialogues
+          </a>
+        </p>
       </article>
 
       <article class="research-topic">
         <span class="research-topic__number">03</span>
         <h3>IaC Agent Assurance</h3>
+        <p class="research-topic__description">
+          We evaluate AI-generated infrastructure-as-code beyond syntax and execution, asking
+          whether it matches user intent and aligns with relevant security policies.
+        </p>
         <ul class="research-keywords">
           <li>Terraform</li>
           <li>Intent Alignment</li>
           <li>Policy-Aware Evaluation</li>
           <li>Deployment Validation</li>
         </ul>
+        <p class="research-topic__paper research-topic__paper--ongoing">
+          <span>Current work</span>
+          Intent- and policy-aware evaluation of Terraform-generating agents
+        </p>
       </article>
 
       <article class="research-topic">
         <span class="research-topic__number">04</span>
         <h3>ROS 2 Agent Assurance</h3>
+        <p class="research-topic__description">
+          We develop execution-grounded evaluations for AI-generated ROS 2 software, covering build
+          and launch success, interface correctness, and expected runtime behaviour.
+        </p>
         <ul class="research-keywords">
           <li>Robot Software Generation</li>
           <li>Build and Launch</li>
           <li>Interface Correctness</li>
           <li>Execution-Centred Evaluation</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/domestic/' | relative_url }}#lee2026ros2">
+            Evaluating Open-Source LLM Performance for ROS 2 Code Generation: An Execution-Centric Pilot Study
+          </a>
+        </p>
       </article>
     </div>
   </section>
@@ -157,6 +231,10 @@ nav_order: 3
       <article class="research-topic research-topic--foundation">
         <span class="research-topic__number">A</span>
         <h3>Federated Learning Security</h3>
+        <p class="research-topic__description">
+          We study privacy and integrity risks in federated learning, including inference,
+          inversion, backdoor, and Byzantine attacks, together with practical defences.
+        </p>
         <ul class="research-keywords">
           <li>Byzantine-Robust FL</li>
           <li>Backdoor Defence</li>
@@ -165,11 +243,21 @@ nav_order: 3
           <li>Model Inversion</li>
           <li>Privacy-Preserving FL</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/' | relative_url }}#lee2023flguard">
+            FLGuard: Byzantine-Robust Federated Learning via Ensemble of Contrastive Models
+          </a>
+        </p>
       </article>
 
       <article class="research-topic research-topic--foundation">
         <span class="research-topic__number">B</span>
         <h3>Model Extraction</h3>
+        <p class="research-topic__description">
+          We investigate how deployed models can be reconstructed through queries or
+          implementation-level leakage, and how such information exposure can be limited.
+        </p>
         <ul class="research-keywords">
           <li>Side-Channel Extraction</li>
           <li>Non-Query Extraction</li>
@@ -178,6 +266,12 @@ nav_order: 3
           <li>Model IP Protection</li>
           <li>Attack and Defence</li>
         </ul>
+        <p class="research-topic__paper">
+          <span>Related paper</span>
+          <a href="{{ '/publications/' | relative_url }}#lee2022precise">
+            Precise Extraction of Deep Learning Models via Side-Channel Attacks on Edge/Endpoint Devices
+          </a>
+        </p>
       </article>
     </div>
   </section>
