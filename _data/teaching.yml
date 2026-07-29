@@ -1,44 +1,92 @@
-university:
-  - title: Python Programming
-    institution: Sungshin Women's University
-    year: Spring 2025; Spring 2026
-    description:
-      - Undergraduate course
-  - title: Artificial Intelligence Basics
-    institution: Sungshin Women's University
-    year: Spring 2025; Spring 2026
-    description:
-      - Undergraduate core course
-  - title: Cybersecurity Monitoring
-    institution: Sungshin Women's University
-    year: Autumn 2025
-    description:
-      - Team-taught advanced undergraduate course
-  - title: Artificial Intelligence Security
-    institution: Sungshin Women's University
-    year: Autumn 2024; Autumn 2025
-    description:
-      - Advanced undergraduate course
-  - title: Database Security
-    institution: Sungshin Women's University
-    year: Autumn 2024; Autumn 2025
-    description:
-      - Advanced undergraduate course
-  - title: Introduction to Information Security Technology
-    institution: Sungshin Women's University
-    year: Autumn 2024
-    description:
-      - Postgraduate course using lectures, paper presentations, discussion, and projects
-  - title: AI Programming
-    institution: Soongsil University
-    year: Spring 2024
-    description:
-      - Postgraduate course
-  - title: Machine Learning-Based Communication Network Security
-    institution: Sungshin Women's University
-    year: Spring 2024
-    description:
-      - Postgraduate course
+formal:
+  - term: Spring 2026
+    load: 9-credit teaching load
+    courses:
+      - title: Python Programming
+        institution: Sungshin Women's University
+        meta: Section 003 · 3 credits
+        description:
+          - Undergraduate common-curriculum course
+      - title: Python Programming
+        institution: Sungshin Women's University
+        meta: Section 004 · 3 credits
+        description:
+          - Undergraduate common-curriculum course
+      - title: Artificial Intelligence Basics
+        institution: Sungshin Women's University
+        meta: Section 001 · 3 credits
+        description:
+          - Undergraduate core course
+  - term: Autumn 2025
+    load: 9-credit teaching load
+    courses:
+      - title: Artificial Intelligence Security
+        institution: Sungshin Women's University
+        meta: Section 001 · 3 credits
+        description:
+          - Advanced undergraduate course
+      - title: Database Security
+        institution: Sungshin Women's University
+        meta: Section 002 · 3 credits
+        description:
+          - Advanced undergraduate course
+      - title: Cybersecurity Monitoring
+        institution: Sungshin Women's University
+        meta: Section 001 · team-taught
+        description:
+          - Advanced undergraduate course, taught in weeks 9–15
+      - title: Cybersecurity Monitoring
+        institution: Sungshin Women's University
+        meta: Section 002 · team-taught
+        description:
+          - Advanced undergraduate course, taught in weeks 1–8
+  - term: Spring 2025
+    load: 9-credit teaching load
+    courses:
+      - title: Python Programming
+        institution: Sungshin Women's University
+        meta: Section 003 · 3 credits
+        description:
+          - Undergraduate common-curriculum course
+      - title: Python Programming
+        institution: Sungshin Women's University
+        meta: Section 005 · 3 credits
+        description:
+          - Undergraduate common-curriculum course
+      - title: Artificial Intelligence Basics
+        institution: Sungshin Women's University
+        meta: Section 001 · 3 credits
+        description:
+          - Undergraduate core course
+  - term: Autumn 2024
+    load: 9-credit teaching load
+    courses:
+      - title: Artificial Intelligence Security
+        institution: Sungshin Women's University
+        meta: Section 001 · 3 credits
+        description:
+          - Advanced undergraduate course
+      - title: Database Security
+        institution: Sungshin Women's University
+        meta: Section 003 · 3 credits
+        description:
+          - Advanced undergraduate course
+      - title: Introduction to Information Security Technology
+        institution: Sungshin Women's University
+        meta: Section 001 · 3 credits
+        description:
+          - Postgraduate course using lectures, paper presentations, discussion, and projects
+  - term: Spring 2024
+    load: Postgraduate teaching
+    courses:
+      - title: AI Programming
+        institution: Soongsil University
+        description:
+          - Postgraduate course
+      - title: Machine Learning-Based Communication Network Security
+        institution: Sungshin Women's University
+        description:
+          - Postgraduate course
 
 evidence:
   - Across 11 independently taught course sections audited from 2024 to 2026, final course-evaluation averages ranged from 4.41 to 4.88 out of 5, based on 373 responses, with a response-weighted mean of 4.60.

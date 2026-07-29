@@ -29,10 +29,10 @@
         {% endif %}
         <div class="cv-time-main mt-2 mt-md-0">
           {% if content.title %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ content.title }}</h6>
+            <h6 class="title font-weight-bold">{{ content.title }}</h6>
           {% endif %}
           {% if content.department or content.institution %}
-            <table class="table-cv ml-1 ml-md-4 institution">
+            <table class="table-cv institution">
               <tbody>
                 {% if content.institution %}
                   <tr>
@@ -54,7 +54,7 @@
             </table>
           {% endif %}
           {% if content.maindescription %}
-            <div class="ml-1 ml-md-4">{{ content.maindescription }}</div>
+            <div>{{ content.maindescription }}</div>
           {% endif %}
           {% if content.description %}
             <ul class="items">
@@ -97,7 +97,7 @@
             </ul>
           {% endif %}
           {% if content.linkitems %}
-            <div class="container-links ml-1 ml-md-4">
+            <div class="container-links">
               {% for item in content.linkitems %}
                 {% if item.link %}
                   <div class="container-link-button">

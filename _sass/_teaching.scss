@@ -42,6 +42,34 @@
   border-top: 1px solid var(--teaching-rule);
 }
 
+.teaching-term + .teaching-term {
+  margin-top: 2.4rem;
+}
+
+.teaching-term__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem 2rem;
+  align-items: baseline;
+  margin-bottom: 0.7rem;
+
+  h3 {
+    margin: 0;
+    color: var(--teaching-ink);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+}
+
+.teaching-term__load {
+  margin: 0;
+  color: var(--teaching-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .teaching-course {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -49,7 +77,8 @@
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--teaching-rule);
 
-  h3 {
+  h3,
+  h4 {
     margin: 0;
     color: var(--teaching-ink);
     font-size: 1rem;
@@ -95,6 +124,11 @@
 }
 
 @media (max-width: 575.98px) {
+  .teaching-term__heading {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
   .teaching-course {
     grid-template-columns: 1fr;
     gap: 0.35rem;

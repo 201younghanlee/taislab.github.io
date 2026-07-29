@@ -46,6 +46,12 @@ table.table-cv {
 
 .cv-time-main {
   overflow-wrap: anywhere;
+
+  > .items {
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    padding-left: 1.15rem;
+  }
 }
 
 a.btncv {
