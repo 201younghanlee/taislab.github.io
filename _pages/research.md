@@ -89,6 +89,10 @@ nav_order: 3
           <li>Root-Cause Repair</li>
           <li>Build and Test Validation</li>
         </ul>
+        <p class="research-topic__paper research-topic__paper--ongoing">
+          <span>Current work</span>
+          DeepAVR: Deep Analysis via Multi-Agent Collaboration for Automated Vulnerability Repair
+        </p>
         <p class="research-topic__paper">
           <span>Related paper</span>
           <a href="{{ '/publications/' | relative_url }}#han2026rethinking">
