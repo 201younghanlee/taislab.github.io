@@ -2,23 +2,25 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: TAIS LAB
 browser_title: TAIS LAB # the browser tab title
 first_name: Younghan
 middle_name: 
 last_name: Lee
 email: 201younghanlee@gmail.com
-#description: > # the ">" symbol means to ignore newlines until "footer_text:" 
-#A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: >-
+  Trust AI & Security Lab at Sungshin Women's University researches AI security
+  and assurance, secure code generation, automated vulnerability repair,
+  federated-learning security, and trustworthy LLM-based and agentic systems.
 #footer_text: >
 #Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords:  # add your own keywords or leave empty
+keywords: AI security, AI assurance, LLM security, agentic AI, secure code generation, automated vulnerability repair, federated learning security, trustworthy AI
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: tais-lab-icon.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://201younghanlee.github.io # the base hostname & protocol for your site
+url: https://www.taislab.co.kr # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -60,9 +62,9 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://www.taislab.co.kr/assets/img/maks_d-lTOM38wVEGM-unsplash.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -125,8 +127,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: TAIS Lab
+blog_description: Research updates from the Trust AI & Security Lab
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -172,7 +174,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /news/:path/
   projects:
     output: true
@@ -233,9 +235,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
@@ -266,24 +266,6 @@ jekyll-minifier:
   exclude: ["robots.txt"]
   uglifier_args:
     harmony: true
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
-# -----------------------------------------------------------------------------
-
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
-
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -460,20 +442,3 @@ vega-embed:
 vega-lite:
   version: "5.16.3"
   integrity: "sha256-TvBvIS5jUN4BSy009usRjNzjI1qRrHPYv7xVLJyjUyw="
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - education
-  - work
-  - publications
-  - projects
-  - skills
-  - languages
-  - interests

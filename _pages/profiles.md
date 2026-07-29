@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: People
-description: members of Trust AI & Security Lab
+description: Professor, supervision, and collaboration at Trust AI & Security Lab
 nav: true
 nav_order: 2
 ---
@@ -11,14 +11,17 @@ nav_order: 2
   <h2>Professor</h2>
   <div class="people-profile">
     <div class="people-profile__image">
-      {% include figure.liquid loading="eager" path="assets/img/pic.png" class="img-fluid z-depth-1 rounded-circle" alt="Younghan Lee" cache_bust=true %}
+      {% include figure.liquid loading="eager" path="assets/img/profile_pic.png" class="img-fluid z-depth-1 rounded-circle" alt="Younghan Lee" cache_bust=true %}
     </div>
     <div class="people-profile__body">
       <h3>Younghan Lee</h3>
       <p>
-        Younghan Lee is an assistant professor at the Convergence Security Engineering Department,
-        Sungshin Women's University. He worked as a postdoctoral researcher at Seoul National
-        University.
+        Younghan Lee is a tenure-track Assistant Professor in the Department of Convergence
+        Security Engineering at Sungshin Women's University. His research connects security of AI
+        with AI for security, spanning model and federated-learning security, privacy, secure code
+        generation, vulnerability detection and repair, and assurance of LLM-based and agentic
+        systems. His work has appeared at ICSE, ESORICS, RAID, DAC and DATE and in
+        <em>IEEE Transactions on Artificial Intelligence</em> and <em>IEEE Access</em>.
       </p>
 
       <h4>Degree</h4>
@@ -28,10 +31,12 @@ nav_order: 2
       </ul>
 
       <h4>Research Interests</h4>
-      <p>
-        Trust AI and Security, adversarial example attacks, model extraction attacks, federated
-        learning, differential privacy, and multimodal learning.
-      </p>
+      <ul>
+        <li>AI security and assurance for LLM-based and agentic systems</li>
+        <li>Secure code generation, vulnerability detection, and automated repair</li>
+        <li>Federated-learning and model security</li>
+        <li>Privacy-preserving and applied AI</li>
+      </ul>
 
       <h4>Contacts</h4>
       <div class="people-links" aria-label="Younghan Lee contact links">
@@ -59,21 +64,20 @@ nav_order: 2
 </section>
 
 <section class="people-section">
-  <h2>Graduate Students</h2>
-  <p class="people-empty">No members listed yet.</p>
+  <h2>Student Research and Supervision</h2>
+  <p>
+    TAIS Lab supervises research-led student projects in AI security, LLM systems, and secure
+    software engineering. Recent advised work includes three ASK 2026 proceedings papers on
+    narrative injection in multi-turn LLM dialogue, execution-centred evaluation of ROS 2 code
+    generation, and RAG attacks and defences. Earlier undergraduate supervision on LLM-based
+    obstructive-sleep-apnoea classification led to a conference poster and a 2025 journal article.
+  </p>
 </section>
 
-<section class="people-section">
-  <h2>Undergraduate Students</h2>
-  <p class="people-empty">No members listed yet.</p>
-</section>
-
-<section class="people-section">
-  <h2>Alumni</h2>
-  <p class="people-empty">No members listed yet.</p>
-</section>
-
-<section class="people-section">
-  <h2>Past Undergraduate Students</h2>
-  <p class="people-empty">No members listed yet.</p>
+<section class="people-section people-contact">
+  <h2>Research Enquiries</h2>
+  <p>
+    For research collaboration and student project enquiries, contact
+    <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a>.
+  </p>
 </section>

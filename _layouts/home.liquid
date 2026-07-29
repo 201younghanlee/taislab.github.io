@@ -19,6 +19,31 @@
         <div class="home-hero__content">
           <h1>Trust AI &amp; Security Lab, TAIS</h1>
           <p>{{ content | strip_html | strip }}</p>
+          <div class="home-hero__actions" aria-label="Explore TAIS Lab">
+            <a href="{{ '/research/' | relative_url }}">Explore our research</a>
+            <a href="{{ '/publications/' | relative_url }}">View publications</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-focus" aria-labelledby="home-focus-title">
+        <div class="home-focus__inner">
+          <p class="home-focus__eyebrow">Research focus</p>
+          <h2 id="home-focus-title">AI security from models to autonomous systems</h2>
+          <div class="home-focus__grid">
+            <article>
+              <h3>Secure AI-enabled software</h3>
+              <p>Vulnerability detection and verification, secure code generation, and automated repair grounded in executable evidence.</p>
+            </article>
+            <article>
+              <h3>Assurance for LLM agents</h3>
+              <p>Security evaluation of retrieval, tool use, multi-agent collaboration, and generated software in real workflows.</p>
+            </article>
+            <article>
+              <h3>Model and federated-learning security</h3>
+              <p>Attacks, defences, privacy leakage, and robust learning across distributed and collaborative AI systems.</p>
+            </article>
+          </div>
         </div>
       </section>
 

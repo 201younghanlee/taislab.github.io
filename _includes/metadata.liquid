@@ -16,15 +16,24 @@
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
 {% capture site_display_title %}{% if site.browser_title %}{{ site.browser_title }}{% elsif site.title == 'blank' %}{{ author_name }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+{% capture title %}{{ site_display_title | upcase }}{% endcapture %}
+{% capture page_display_title %}{% if page.url != '/' and page.title %}{{ page.title }} | {{ title }}{% else %}{{ title }}{% endif %}{% endcapture %}
+{% if page.redirect == true %}
+  {% assign canonical_path = '/' %}
+{% else %}
+  {% assign canonical_path = page.redirect | default: page.url | split: '#' | first %}
+{% endif %}
+{% if canonical_path contains '://' %}
+  {% assign canonical_url = canonical_path %}
+{% else %}
+  {% assign canonical_url = canonical_path | absolute_url %}
+{% endif %}
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-  {% capture title %}{{ site_display_title | upcase }}{% endcapture %}
-  {{ title }}
-</title>
+<title>{{ page_display_title }}</title>
 <meta name="author" content="{{ author_name }}">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.keywords or site.keywords %}
@@ -42,8 +51,8 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
-  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
+  <meta property="og:title" content="{{ page_display_title }}">
+  <meta property="og:url" content="{{ canonical_url | remove_first: 'index.html' }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
@@ -52,7 +61,7 @@
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta name="twitter:title" content="{{ page_display_title }}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
     <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
@@ -214,14 +223,14 @@
             "@type": "Person",
             "name": "{{ author_name }}"
         },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
+        "url": "{{ canonical_url }}",
+        "@type": "{% if is_blog_post %}BlogPosting{% elsif page.url == '/' %}WebSite{% else %}WebPage{% endif %}",
         "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+        "headline": "{% if page.url == '/' %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}",
         {% if sameaslinks != blank %}
         "sameAs": {{ sameaslinks }},
         {% endif %}
-        "name": "{{ author_name }}",
+        "name": "{{ page_display_title }}",
         "@context": "https://schema.org"
     }
   </script>
