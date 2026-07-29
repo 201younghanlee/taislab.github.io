@@ -143,31 +143,30 @@
       {% endif %}
     </div>
 
-    {% assign first_author = entry.author_array | first %}
-    <div class="author-roles" aria-label="Verified author roles">
-      {% if entry.cofirstauthors %}
-        <span class="author-role">
-          <strong>Co-first authors</strong>
-          {{ entry.cofirstauthors }}
-        </span>
-      {% elsif author_array_size == 1 %}
-        <span class="author-role">
-          <strong>Sole author</strong>
-          {{ first_author.first }} {{ first_author.last }}
-        </span>
-      {% else %}
-        <span class="author-role">
-          <strong>First author</strong>
-          {{ first_author.first }} {{ first_author.last }}
-        </span>
-      {% endif %}
-      {% if entry.correspondingauthors %}
-        <span class="author-role">
-          <strong>Corresponding author{% if entry.correspondingauthors contains ' and ' %}s{% endif %}</strong>
-          {{ entry.correspondingauthors }}
-        </span>
-      {% endif %}
-    </div>
+    {% assign show_cofirstauthors = false %}
+    {% if entry.cofirstauthors contains ' and ' %}
+      {% assign show_cofirstauthors = true %}
+    {% endif %}
+    {% assign show_correspondingauthors = false %}
+    {% if entry.correspondingauthors contains ' and ' %}
+      {% assign show_correspondingauthors = true %}
+    {% endif %}
+    {% if show_cofirstauthors or show_correspondingauthors %}
+      <div class="author-roles" aria-label="Shared author roles">
+        {% if show_cofirstauthors %}
+          <span class="author-role">
+            <strong>Co-first authors</strong>
+            {{ entry.cofirstauthors }}
+          </span>
+        {% endif %}
+        {% if show_correspondingauthors %}
+          <span class="author-role">
+            <strong>Corresponding authors</strong>
+            {{ entry.correspondingauthors }}
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
