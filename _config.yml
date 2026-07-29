@@ -295,6 +295,7 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+  bibliography_group_tag: h4
 
 # Display different badges withs stats for your publications
 enable_publication_badges:
@@ -304,7 +305,7 @@ enable_publication_badges:
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
-  [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
+  [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, pubstatus, pubtype, scope, selected, slides, supp, video, website]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit:  # leave blank to always show all authors
