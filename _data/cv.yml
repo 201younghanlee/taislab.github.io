@@ -146,24 +146,6 @@
         - link: /publications/#bae2021learn2evade
           linkname: Publication
 
-- title: Current Research
-  type: research_map
-  contents:
-    - label: LLMs for security
-      title: LLM4SEC
-      items:
-        - Automated vulnerability repair
-        - Vulnerability detection and verification
-        - Secure code generation
-        - Kernel code fault localization
-    - label: Security for LLMs and AI/ML systems
-      title: "SEC4LLM & AI/ML Security"
-      items:
-        - RAG security
-        - IaC agent assurance
-        - ROS 2 agent assurance
-        - Federated-learning security
-
 - title: Selected Funded Research Projects
   type: time_table
   contents:
