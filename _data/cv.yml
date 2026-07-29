@@ -142,6 +142,28 @@
         - link: /publications/#bae2021learn2evade
           linkname: Publication
 
+- title: Selected International Conference Abstracts and Posters
+  type: time_table
+  contents:
+    - title: "Characteristics of Sleep Neural Dynamics between Men and Women with Obstructive Sleep Apnea"
+      year: 2024
+      description:
+        - "Younghan Lee, Youngseo Kim, Hyeon Jin Kim, Ho Bae, Yunheung Paek, and Hyang Woon Lee."
+        - "Organization for Human Brain Mapping Annual Meeting 2024, Poster 4372."
+        - "Role: First author."
+    - title: "Can REM Sleep Behavior Disorder Be Differentiated by Using Neural Dynamics during Sleep?"
+      year: 2024
+      description:
+        - "Younghan Lee, Youngseo Kim, Hyeon Jin Kim, Ho Bae, Yunheung Paek, and Hyang Woon Lee."
+        - "Organization for Human Brain Mapping Annual Meeting 2024, Poster 3322."
+        - "Role: First author."
+    - title: "Individualized Neural Dynamics Patterns During Sleep by High-Resolution Phenotype Mapping"
+      year: 2024
+      description:
+        - "Hyeon Jin Kim, Younghan Lee, Sophie Saremsky, Habiba Noamany, Youngseo Kim, Ho Bae, Yunheung Paek, Michael J. Prerau, and Hyang Woon Lee."
+        - "Organization for Human Brain Mapping Annual Meeting 2024, Poster 3844."
+        - "Role: Co-author."
+
 - title: Selected Funded Research Projects
   type: time_table
   contents:
