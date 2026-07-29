@@ -101,31 +101,13 @@
 }
 
 .home-focus {
-  padding: clamp(3rem, 7vw, 5.25rem) 1.25rem;
+  padding: clamp(2.25rem, 5vw, 3.75rem) 1.25rem;
   background: var(--global-bg-color);
 }
 
 .home-focus__inner {
   width: min(#{$max-content-width}, 100%);
   margin: 0 auto;
-
-  > h2 {
-    max-width: 700px;
-    margin: 0 0 1.75rem;
-    font-size: clamp(1.8rem, 3.2vw, 2.55rem);
-    font-weight: 750;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-}
-
-.home-focus__eyebrow {
-  margin: 0 0 0.6rem;
-  color: var(--global-theme-color) !important;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .home-focus__grid {
