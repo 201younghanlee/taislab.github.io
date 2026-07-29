@@ -18,9 +18,6 @@ nav_order: 3
         <p class="research-eyebrow">LLMs for security</p>
         <h2 id="llm4sec-heading">LLM4SEC</h2>
       </div>
-      <p class="research-flow" aria-label="Generate, detect, localize, and repair">
-        Generate <span>→</span> Detect <span>→</span> Localize <span>→</span> Repair
-      </p>
     </header>
 
     <div class="research-topic-grid research-topic-grid--four">
@@ -117,9 +114,6 @@ nav_order: 3
         <p class="research-eyebrow">Security for LLMs</p>
         <h2 id="sec4llm-heading">SEC4LLM</h2>
       </div>
-      <p class="research-flow" aria-label="Retrieve, converse, act, and execute">
-        Retrieve <span>→</span> Converse <span>→</span> Act <span>→</span> Execute
-      </p>
     </header>
 
     <div class="research-topic-grid research-topic-grid--four">
