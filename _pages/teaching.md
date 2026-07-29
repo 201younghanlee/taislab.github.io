@@ -15,7 +15,7 @@ nav_order: 5
   <section class="teaching-section" aria-labelledby="university-teaching-heading">
     <header class="teaching-section__heading">
       <p class="teaching-eyebrow">Formal courses</p>
-      <h2 id="university-teaching-heading">University teaching</h2>
+      <h2 id="university-teaching-heading">University Teaching</h2>
     </header>
 
     <div class="teaching-term-list">
@@ -52,7 +52,7 @@ nav_order: 5
   <section class="teaching-section" aria-labelledby="teaching-evidence-heading">
     <header class="teaching-section__heading">
       <p class="teaching-eyebrow">Evaluation and development</p>
-      <h2 id="teaching-evidence-heading">Teaching evidence</h2>
+      <h2 id="teaching-evidence-heading">Teaching Evidence</h2>
     </header>
 
     <ul class="teaching-evidence">
@@ -65,7 +65,7 @@ nav_order: 5
   <section class="teaching-section" aria-labelledby="additional-teaching-heading">
     <header class="teaching-section__heading">
       <p class="teaching-eyebrow">Postgraduate, international, and invited teaching</p>
-      <h2 id="additional-teaching-heading">Additional teaching</h2>
+      <h2 id="additional-teaching-heading">Additional Teaching</h2>
     </header>
 
     <div class="teaching-course-list">
