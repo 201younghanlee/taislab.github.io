@@ -63,6 +63,58 @@ nav_order: 2
   </div>
 </section>
 
+<section class="people-section student-section">
+  <h2>Undergraduate Researchers</h2>
+  <p class="student-section__intro">
+    Current undergraduate researchers at Sungshin Women's University working on secure and
+    trustworthy AI systems.
+  </p>
+
+  <div class="student-grid">
+    <article class="student-card">
+      <div class="student-card__avatar" aria-hidden="true">JL</div>
+      <div class="student-card__body">
+        <h3>Jeni Lee <span lang="ko">이제니</span></h3>
+        <p class="student-card__role">Undergraduate Researcher</p>
+        <p class="student-card__research">
+          LLM-based ROS 2 code generation and execution-centred evaluation
+        </p>
+      </div>
+    </article>
+
+    <article class="student-card">
+      <div class="student-card__avatar" aria-hidden="true">AS</div>
+      <div class="student-card__body">
+        <h3>Ayoung Shim <span lang="ko">심아영</span></h3>
+        <p class="student-card__role">Undergraduate Researcher</p>
+        <p class="student-card__research">
+          Benchmarks and static evaluation for LLM-generated ROS 2 software
+        </p>
+      </div>
+    </article>
+
+    <article class="student-card">
+      <div class="student-card__avatar" aria-hidden="true">CH</div>
+      <div class="student-card__body">
+        <h3>Choyeon Han <span lang="ko">한초연</span></h3>
+        <p class="student-card__role">Undergraduate Researcher</p>
+        <p class="student-card__research">RAG security and trustworthy LLM systems</p>
+      </div>
+    </article>
+
+    <article class="student-card">
+      <div class="student-card__avatar" aria-hidden="true">MJ</div>
+      <div class="student-card__body">
+        <h3>Minju Jang <span lang="ko">장민주</span></h3>
+        <p class="student-card__role">Undergraduate Researcher</p>
+        <p class="student-card__research">
+          RAG attack–defence evaluation and trustworthy LLM systems
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="people-section">
   <h2>Student Research and Supervision</h2>
   <p>

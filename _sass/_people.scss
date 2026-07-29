@@ -71,6 +71,75 @@
   }
 }
 
+.student-section__intro {
+  max-width: 52rem;
+  margin-bottom: 1.25rem;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.student-card {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 1.15rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.75rem;
+  background: var(--global-card-bg-color);
+}
+
+.student-card__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 50%;
+  color: var(--global-theme-color);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.student-card__body {
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0;
+
+    span {
+      margin-left: 0.3rem;
+      color: var(--global-text-color-light);
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.student-card__role {
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.student-card__research {
+  margin-top: 0.45rem;
+  color: var(--global-text-color-light);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
 .people-empty {
   margin: 0;
   color: var(--global-text-color-light);
@@ -83,5 +152,15 @@
 
   .people-profile__image {
     max-width: 220px;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .student-card {
+    grid-template-columns: 1fr;
   }
 }
