@@ -38,10 +38,10 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #202428;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #f1f3f5;
-  --global-text-color-light: #c3c9d0;
+  --global-text-color: #d7dde3;
+  --global-text-color-light: #adb7c1;
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$white-color};
@@ -49,8 +49,8 @@ html[data-theme="dark"] {
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #3a424b;
+  --global-card-bg-color: #252a30;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

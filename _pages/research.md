@@ -35,7 +35,7 @@ nav_order: 3
         </ul>
         <p class="research-topic__paper research-topic__paper--ongoing">
           <span>Current work</span>
-          DeepAVR: Deep Analysis via Multi-Agent Collaboration for Automated Vulnerability Repair
+          Validation-guided root-cause analysis and repair
         </p>
         <p class="research-topic__paper">
           <span>Related paper</span>

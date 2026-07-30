@@ -150,16 +150,16 @@
       year: Jul 2024 – Dec 2026
       description:
         - Participating Researcher, project RS-2024-00439819
-    - title: Confidential-Computing-Based Privacy-Preserving Federated Learning Platform and Security Technologies
-      institution: National Research Foundation of Korea
-      year: Apr 2024 – Mar 2027
-      description:
-        - Participating Researcher, project RS-2024-00351898
     - title: Quantitative Sleep Microstructure Optimisation for Cognitive and Emotional Enhancement
       institution: National Research Foundation of Korea
       year: May 2024 – Dec 2028
       description:
         - Participating Researcher, project RS-2024-00359247
+    - title: Confidential-Computing-Based Privacy-Preserving Federated Learning Platform and Security Technologies
+      institution: National Research Foundation of Korea
+      year: Apr 2024 – Mar 2027
+      description:
+        - Participating Researcher, project RS-2024-00351898
 
 - title: Student Supervision and Examination
   type: list
@@ -171,13 +171,6 @@
 - title: Academic and Professional Service
   type: time_table
   contents:
-    - title: Peer Review
-      year: 2025–2026
-      description:
-        - "IEEE Transactions on Dependable and Secure Computing, 2025"
-        - "ACM Transactions on Software Engineering and Methodology, 2025"
-        - "Journal of Information Processing Systems, 2025–2026"
-        - "KIPS Transactions on Computer and Communication Systems, 2025–2026"
     - title: Leadership and Conference Service
       institution: Korea Information Processing Society
       year: 2024–Present
@@ -194,20 +187,32 @@
       description:
         - "Secretariat Member, Imperial College London Alumni Association Korea"
         - "External Evaluator, Seocho Resident Living Lab Idea Competition"
+    - title: Peer Review
+      year: 2025–2026
+      description:
+        - "IEEE Transactions on Dependable and Secure Computing, 2025"
+        - "ACM Transactions on Software Engineering and Methodology, 2025"
+        - "Journal of Information Processing Systems, 2025–2026"
+        - "KIPS Transactions on Computer and Communication Systems, 2025–2026"
 
 - title: Selected Intellectual Property and Impact
   type: time_table
   contents:
-    - title: Korean Patent Application 10-2026-0016350
-      year: 28 Jan 2026
-      description:
-        - Multi-LLM clinical decision support for automated interpretation of sleep questionnaires and sleep-disorder correlation search
-        - "Co-inventors: Jooyoung Kim and Younghan Lee"
     - title: Korean Patent Applications 10-2025-0189598 and 10-2026-0110736
       year: 3 Dec 2025 / 17 Jun 2026
       description:
         - Backdoor-robust multimodal-model training and inference
         - "Co-inventors: Ho Bae, Youngseo Kim, and Younghan Lee"
+    - title: External Advisory Engagement
+      institution: Software Policy Research Institute
+      year: Feb 2026
+      description:
+        - Consultation on the impact of AI development on the software industry
+    - title: Korean Patent Application 10-2026-0016350
+      year: 28 Jan 2026
+      description:
+        - Multi-LLM clinical decision support for automated interpretation of sleep questionnaires and sleep-disorder correlation search
+        - "Co-inventors: Jooyoung Kim and Younghan Lee"
     - title: Computer Program Copyright Registration C-2025-056782
       year: 10 Dec 2025
       description:
@@ -220,11 +225,6 @@
         - Positional and REM-Dominant OSA Classification Model with Differential Privacy
         - Joint institutional registration by the university-industry cooperation foundations of Ewha Womans University and Sungshin Women's University
         - Younghan Lee is named as the representative inventor in Sungshin Women's University's institutional disclosure
-    - title: External Advisory Engagement
-      institution: Software Policy Research Institute
-      year: Feb 2026
-      description:
-        - Consultation on the impact of AI development on the software industry
 
 - title: Selected Invited Teaching and Talks
   type: time_table

@@ -51,6 +51,7 @@ table.table-cv {
     min-width: 0;
     max-width: 100%;
     white-space: nowrap;
+    font-weight: 600 !important;
     line-height: 1.35;
     text-align: left;
   }
@@ -68,6 +69,7 @@ table.table-cv {
   h6.title {
     margin-bottom: 0.35rem;
     font-size: 1.05rem;
+    font-weight: 600 !important;
     line-height: 1.35;
   }
 
@@ -154,7 +156,7 @@ table.institution {
   h5 {
     margin: 0 0 0.65rem;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   ul {
@@ -175,7 +177,7 @@ table.institution {
   margin: 0 0 0.2rem;
   color: var(--global-text-color-light);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -296,7 +298,7 @@ span.badge-toc {
   background-color: var(--global-theme-color);
   border-radius: 0.125rem;
   padding: 0.125rem 0.5rem 0.125rem 0.5rem;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   display: inline-block;
   inline-size: fit-content;
 }
