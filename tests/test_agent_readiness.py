@@ -159,6 +159,7 @@ class AgentReadinessTest(unittest.TestCase):
         self.assertNotRegex(publications, r"\[Bib\](?!\()")
 
     def test_machine_readable_files_and_internal_llms_links_resolve(self) -> None:
+        self.assertTrue((SITE / ".nojekyll").exists())
         for filename in ("llms.txt", "robots.txt", "sitemap.xml", "feed.xml"):
             file_path = SITE / filename
             self.assertTrue(file_path.exists(), filename)

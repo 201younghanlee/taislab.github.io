@@ -206,6 +206,10 @@ def canonical_routes(site_dir: Path) -> list[str]:
 
 
 def generate(site_dir: Path, base_url: str) -> list[Path]:
+    # The deployment branch contains the already rendered Jekyll site. Without
+    # this marker GitHub Pages attempts a second Jekyll pass over the generated
+    # Markdown alternatives, which can reinterpret publication text as Liquid.
+    (site_dir / ".nojekyll").write_text("", encoding="utf-8")
     written: list[Path] = []
     for route in canonical_routes(site_dir):
         source = source_html_path(site_dir, route)

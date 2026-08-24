@@ -5,6 +5,10 @@ negotiates between the generated HTML and Markdown variants, returns `406` when 
 acceptable, and adds `Vary: Accept, Accept-Encoding` to negotiated responses. Missing Markdown
 routes receive a short agent-oriented `404` response.
 
+The build writes `_site/.nojekyll` because the Markdown alternatives are final static assets. The
+GitHub Pages deployment also preserves this marker so the generated files are not passed through a
+second Jekyll and Liquid rendering step.
+
 The Worker is deliberately not connected to the public domain by this repository change. The
 current domain points directly to GitHub Pages, which cannot inspect an `Accept` request header or
 set the required `Vary` response header. Activating this layer therefore requires a Cloudflare

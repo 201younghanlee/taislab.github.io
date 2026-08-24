@@ -114,3 +114,16 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Preserve prebuilt output on GitHub Pages
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/contents/.nojekyll?ref=gh-pages" >/dev/null 2>&1; then
+            echo ".nojekyll is present on gh-pages"
+          else
+            gh api --method PUT "repos/${GITHUB_REPOSITORY}/contents/.nojekyll" \
+              -f message="Serve generated site without a second Jekyll build" \
+              -f content="" \
+              -f branch="gh-pages"
+          fi
