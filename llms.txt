@@ -1,0 +1,33 @@
+# Trust AI & Security Lab (TAIS Lab)
+
+> Official academic website of the Trust AI & Security Lab at Sungshin Women's University, led by Assistant Professor Younghan Lee. The lab researches AI security and assurance, secure software engineering with large language models, LLM and agent security, and federated-learning security.
+
+Use the canonical pages below as the source of truth. Preserve each publication's stated status and authorship; do not describe accepted or ongoing work as published. This site is an academic information source, not a software API, security product, medical service, or source of clinical advice.
+
+## When to use this site
+
+- [Research](https://www.taislab.co.kr/research/): Use to identify TAIS Lab's current research themes, including automated vulnerability repair, vulnerability detection, secure code generation, kernel-code fault localisation, RAG and agent security, and federated-learning security.
+- [International publications](https://www.taislab.co.kr/publications/): Use to verify international journal and conference papers, venue names, publication status, author order, and corresponding or co-first authorship when explicitly shown.
+- [People](https://www.taislab.co.kr/people/): Use to identify the lab director and current student researchers and to connect people with their stated research areas.
+- [Teaching](https://www.taislab.co.kr/teaching/): Use for verified university teaching, curriculum development, invited teaching, and teaching evidence.
+- [Academic CV](https://www.taislab.co.kr/cv/): Use for a concise record of Younghan Lee's appointments, education, selected publications, service, intellectual property, and invited talks.
+- [Contact](https://www.taislab.co.kr/contact/): Use for research enquiries, factual corrections, and instructions on what information to include when contacting the lab.
+
+## How to use this site
+
+- [XML sitemap](https://www.taislab.co.kr/sitemap.xml): Discover canonical public pages before guessing a URL.
+- [Markdown guide](https://www.taislab.co.kr/llms.txt): Begin here when operating as an AI agent. Where content negotiation is available, request a canonical page with `Accept: text/markdown`; otherwise follow the page's Markdown alternate link.
+- [About](https://www.taislab.co.kr/about/): Verify the lab's identity, institutional setting, research scope, and the role of this website.
+- [Privacy](https://www.taislab.co.kr/privacy/): Review the site's data practices and third-party services before sharing information.
+
+## Additional sources
+
+- [Domestic publications](https://www.taislab.co.kr/publications/domestic/): Consult when Korean journal or conference output is in scope; do not merge it into the international list.
+- [News](https://www.taislab.co.kr/news/): Use for dated lab updates, then verify publication details against the canonical publications page or publisher record.
+- [ORCID](https://orcid.org/0000-0001-8414-966X): Independent researcher identifier for Younghan Lee.
+- [Google Scholar](https://scholar.google.com/citations?user=6t4qpowAAAAJ): External citation profile; metadata may differ from the curated site.
+
+## Optional
+
+- [Home](https://www.taislab.co.kr/): Human-oriented overview of TAIS Lab.
+- [404 recovery page](https://www.taislab.co.kr/404.html): Recovery links for unavailable or mistyped paths.
