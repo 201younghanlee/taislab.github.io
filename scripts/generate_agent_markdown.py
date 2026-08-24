@@ -210,6 +210,8 @@ def generate(site_dir: Path, base_url: str) -> list[Path]:
     # this marker GitHub Pages attempts a second Jekyll pass over the generated
     # Markdown alternatives, which can reinterpret publication text as Liquid.
     (site_dir / ".nojekyll").write_text("", encoding="utf-8")
+    worker_source = Path(__file__).resolve().parents[1] / "edge" / "worker.mjs"
+    (site_dir / "_worker.js").write_text(worker_source.read_text(encoding="utf-8"), encoding="utf-8")
     written: list[Path] = []
     for route in canonical_routes(site_dir):
         source = source_html_path(site_dir, route)

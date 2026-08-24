@@ -7,7 +7,9 @@ routes receive a short agent-oriented `404` response.
 
 The build writes `_site/.nojekyll` because the Markdown alternatives are final static assets. The
 GitHub Pages deployment also preserves this marker so the generated files are not passed through a
-second Jekyll and Liquid rendering step.
+second Jekyll and Liquid rendering step. It also copies the Worker to `_site/_worker.js`, the
+[Cloudflare Pages Advanced Mode](https://developers.cloudflare.com/pages/functions/advanced-mode/)
+entry point, so the identical site can be deployed with request-time content negotiation.
 
 The Worker is deliberately not connected to the public domain by this repository change. The
 current domain points directly to GitHub Pages, which cannot inspect an `Accept` request header or

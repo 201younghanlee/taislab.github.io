@@ -160,6 +160,10 @@ class AgentReadinessTest(unittest.TestCase):
 
     def test_machine_readable_files_and_internal_llms_links_resolve(self) -> None:
         self.assertTrue((SITE / ".nojekyll").exists())
+        self.assertEqual(
+            (SITE / "_worker.js").read_text(encoding="utf-8"),
+            (ROOT / "edge" / "worker.mjs").read_text(encoding="utf-8"),
+        )
         for filename in ("llms.txt", "robots.txt", "sitemap.xml", "feed.xml"):
             file_path = SITE / filename
             self.assertTrue(file_path.exists(), filename)
