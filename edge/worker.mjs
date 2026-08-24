@@ -115,8 +115,21 @@ export async function handleRequest(request, env) {
     return setVariantHeaders(response, MARKDOWN);
   }
 
-  if (!isPagePath(url.pathname) || !["GET", "HEAD"].includes(request.method)) {
+  if (!["GET", "HEAD"].includes(request.method)) {
     return env.ASSETS.fetch(request);
+  }
+
+  if (!isPagePath(url.pathname)) {
+    const response = await env.ASSETS.fetch(request);
+    if (response.status !== 404) return response;
+
+    const representation = chooseRepresentation(request.headers.get("Accept"));
+    if (representation === "markdown") return markdownNotFound(request.url);
+
+    // A missing dotted path can still be requested as either HTML or Markdown.
+    // Mark the HTML 404 as negotiated so shared caches do not reuse it for a
+    // later Markdown request to the same URL.
+    return setVariantHeaders(response, HTML);
   }
 
   const representation = chooseRepresentation(request.headers.get("Accept"));

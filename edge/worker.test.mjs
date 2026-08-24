@@ -15,6 +15,7 @@ class FakeAssets {
       ["/404.html", ["<html><body>Page not found</body></html>", "text/html; charset=utf-8"]],
       ["/404.md", ["# Page not found\n", "text/markdown; charset=utf-8"]],
       ["/llms.txt", ["# TAIS Lab\n", "text/plain; charset=utf-8"]],
+      ["/asset.txt", ["static asset\n", "text/plain; charset=utf-8"]],
     ]);
   }
 
@@ -135,4 +136,26 @@ test("missing direct Markdown files use the recoverable Markdown 404", async () 
   assert.equal(response.status, 404);
   assert.equal(response.headers.get("content-type"), "text/markdown; charset=utf-8");
   assert.match(await response.text(), /XML sitemap/);
+});
+
+test("missing dotted paths negotiate a recoverable Markdown 404", async () => {
+  const response = await handleRequest(request("/missing.txt", "text/markdown"), env);
+  assert.equal(response.status, 404);
+  assert.equal(response.headers.get("content-type"), "text/markdown; charset=utf-8");
+  assert.equal(response.headers.get("vary"), "Accept, Accept-Encoding");
+  assert.match(await response.text(), /Agent guide/);
+});
+
+test("missing dotted paths keep a cache-safe HTML 404 for browsers", async () => {
+  const response = await handleRequest(request("/missing.txt", "text/html"), env);
+  assert.equal(response.status, 404);
+  assert.equal(response.headers.get("content-type"), "text/html; charset=utf-8");
+  assert.equal(response.headers.get("vary"), "Accept, Accept-Encoding");
+});
+
+test("existing static assets are served without page negotiation", async () => {
+  const response = await handleRequest(request("/asset.txt", "text/markdown"), env);
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("content-type"), "text/plain; charset=utf-8");
+  assert.equal(await response.text(), "static asset\n");
 });

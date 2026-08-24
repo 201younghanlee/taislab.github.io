@@ -2,8 +2,9 @@
 
 This Worker serves the existing Jekyll build without changing its visual design. For page URLs it
 negotiates between the generated HTML and Markdown variants, returns `406` when neither is
-acceptable, and adds `Vary: Accept, Accept-Encoding` to negotiated responses. Missing Markdown
-routes receive a short agent-oriented `404` response.
+acceptable, and adds `Vary: Accept, Accept-Encoding` to negotiated responses. Any missing route,
+including a dotted path such as `/missing.txt`, receives a short agent-oriented Markdown `404`
+when the client requests Markdown while browsers retain the existing HTML `404` page.
 
 The build writes `_site/.nojekyll` because the Markdown alternatives are final static assets. The
 GitHub Pages deployment also preserves this marker so the generated files are not passed through a
@@ -11,10 +12,9 @@ second Jekyll and Liquid rendering step. It also copies the Worker to `_site/_wo
 [Cloudflare Pages Advanced Mode](https://developers.cloudflare.com/pages/functions/advanced-mode/)
 entry point, so the identical site can be deployed with request-time content negotiation.
 
-The Worker is deliberately not connected to the public domain by this repository change. The
-current domain points directly to GitHub Pages, which cannot inspect an `Accept` request header or
-set the required `Vary` response header. Activating this layer therefore requires a Cloudflare
-account, a deployment token, and an approved DNS or custom-domain change.
+The Worker is deployed through Cloudflare Pages for `www.taislab.co.kr`. The generated `_worker.js`
+is the request-time negotiation layer; publishing only the static files to GitHub Pages will not
+provide `Accept` negotiation.
 
 Local checks:
 
