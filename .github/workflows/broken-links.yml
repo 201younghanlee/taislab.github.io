@@ -9,9 +9,14 @@ on:
       - "assets/**"
       - "**.html"
       - "**.js"
+      - "**/*.mjs"
+      - "**/*.py"
+      - "**/*.jsonc"
       - "**/*.scss"
       - "**.liquid"
       - "**/*.md"
+      - "**/*.txt"
+      - "llms.txt"
       - "**/*.bib"
       - "**/*.rb"
       - "**.yml"
@@ -34,9 +39,14 @@ on:
       - "assets/**"
       - "**.html"
       - "**.js"
+      - "**/*.mjs"
+      - "**/*.py"
+      - "**/*.jsonc"
       - "**/*.scss"
       - "**.liquid"
       - "**/*.md"
+      - "**/*.txt"
+      - "llms.txt"
       - "**/*.bib"
       - "**/*.rb"
       - "**.yml"
@@ -63,4 +73,4 @@ jobs:
         with:
           fail: true
           # removed md files that include liquid tags
-          args: --exclude-path README.md --exclude-path CUSTOMIZE.md --exclude-path _pages/404.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: --exclude-path README.md --exclude-path CUSTOMIZE.md --exclude-path _pages/404.md --verbose --no-progress './**/*.md' './**/*.html' './llms.txt'

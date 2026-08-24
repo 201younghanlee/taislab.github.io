@@ -212,26 +212,66 @@
     {% capture link %}https://www.zotero.org/{{ site.zotero_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if sameaslinks != blank %}
-    {% assign sameaslinks = sameaslinks | split: '' %}
-  {% endif %}
+  {% assign schema_description = page.description | default: site.description %}
+  {% assign schema_person_name = site.principal_name | default: author_name | strip %}
+  {% capture schema_site_url %}{{ site.url }}{{ site.baseurl }}/{% endcapture %}
+  {% capture schema_website_id %}{{ site.url }}{{ site.baseurl }}/#website{% endcapture %}
+  {% capture schema_organization_id %}{{ site.url }}{{ site.baseurl }}/#organization{% endcapture %}
+  {% capture schema_person_id %}{{ site.url }}{{ site.baseurl }}/#younghan-lee{% endcapture %}
+  {% capture schema_page_id %}{{ canonical_url }}#webpage{% endcapture %}
 
   <script type="application/ld+json">
     {
-        "author":
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@type": "Person",
-            "name": "{{ author_name }}"
+          "@type": "WebSite",
+          "@id": {{ schema_website_id | jsonify }},
+          "url": {{ schema_site_url | jsonify }},
+          "name": {{ site_display_title | jsonify }},
+          "description": {{ site.description | jsonify }},
+          "publisher": { "@id": {{ schema_organization_id | jsonify }} }
         },
-        "url": "{{ canonical_url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% elsif page.url == '/' %}WebSite{% else %}WebPage{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.url == '/' %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks }},
-        {% endif %}
-        "name": "{{ page_display_title }}",
-        "@context": "https://schema.org"
+        {
+          "@type": "ResearchOrganization",
+          "@id": {{ schema_organization_id | jsonify }},
+          "name": {{ site.organization_name | default: site.title | jsonify }},
+          "description": {{ site.description | jsonify }},
+          "url": {{ site.organization_url | default: schema_site_url | jsonify }},
+          "parentOrganization": {
+            "@type": "CollegeOrUniversity",
+            "name": {{ site.organization_parent | jsonify }},
+            "url": "https://www.sungshin.ac.kr/"
+          },
+          "member": { "@id": {{ schema_person_id | jsonify }} }
+        },
+        {
+          "@type": "Person",
+          "@id": {{ schema_person_id | jsonify }},
+          "name": {{ schema_person_name | jsonify }},
+          "description": {{ site.principal_description | jsonify }},
+          "url": {{ site.principal_profile_url | jsonify }},
+          "jobTitle": {{ site.principal_job_title | jsonify }},
+          "worksFor": {
+            "@type": "CollegeOrUniversity",
+            "name": {{ site.organization_parent | jsonify }},
+            "url": "https://www.sungshin.ac.kr/"
+          },
+          "affiliation": { "@id": {{ schema_organization_id | jsonify }} },
+          "sameAs": {{ sameaslinks | jsonify }}
+        },
+        {
+          "@type": "{% if is_blog_post %}BlogPosting{% else %}WebPage{% endif %}",
+          "@id": {{ schema_page_id | jsonify }},
+          "url": {{ canonical_url | jsonify }},
+          "name": {{ page_display_title | jsonify }},
+          "headline": {% if page.url == '/' %}{{ site_display_title | jsonify }}{% elsif page.title %}{{ page.title | jsonify }}{% else %}{{ site_display_title | jsonify }}{% endif %},
+          "description": {{ schema_description | jsonify }},
+          "isPartOf": { "@id": {{ schema_website_id | jsonify }} },
+          "about": { "@id": {{ schema_organization_id | jsonify }} },
+          "author": { "@id": {{ schema_person_id | jsonify }} }
+        }
+      ]
     }
   </script>
 {% endif %}

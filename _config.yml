@@ -8,6 +8,17 @@ first_name: Younghan
 middle_name: 
 last_name: Lee
 email: 201younghanlee@gmail.com
+principal_name: Younghan Lee
+principal_job_title: Assistant Professor
+principal_profile_url: https://www.taislab.co.kr/people/
+principal_description: >-
+  Assistant Professor in the Department of Convergence Security Engineering at
+  Sungshin Women's University and director of Trust AI & Security Lab, researching
+  AI security and assurance, secure software engineering with language models,
+  LLM and agent security, and federated-learning security.
+organization_name: Trust AI & Security Lab
+organization_parent: Sungshin Women's University
+organization_url: https://www.taislab.co.kr/
 description: >-
   Trust AI & Security Lab at Sungshin Women's University researches AI security
   and assurance, secure code generation, automated vulnerability repair,
@@ -211,6 +222,9 @@ kramdown:
 include: ["_pages"]
 exclude:
   - bin/
+  - edge/
+  - scripts/
+  - tests/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile

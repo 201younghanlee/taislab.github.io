@@ -9,9 +9,14 @@ on:
       - "assets/**"
       - "**.html"
       - "**.js"
+      - "**/*.mjs"
+      - "**/*.py"
+      - "**/*.jsonc"
       - "**/*.scss"
       - "**.liquid"
       - "**/*.md"
+      - "**/*.txt"
+      - "llms.txt"
       - "**/*.bib"
       - "**/*.rb"
       - "**.yml"
@@ -40,9 +45,14 @@ on:
       - "assets/**"
       - "**.html"
       - "**.js"
+      - "**/*.mjs"
+      - "**/*.py"
+      - "**/*.jsonc"
       - "**/*.scss"
       - "**.liquid"
       - "**/*.md"
+      - "**/*.txt"
+      - "llms.txt"
       - "**/*.bib"
       - "**/*.rb"
       - "**.yml"
@@ -92,6 +102,9 @@ jobs:
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
+          python3 scripts/generate_agent_markdown.py --site-dir _site --base-url https://www.taislab.co.kr
+          python3 -m unittest discover -s tests -p "test_*.py"
+          node --test edge/worker.test.mjs
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

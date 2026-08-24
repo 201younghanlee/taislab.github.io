@@ -55,6 +55,18 @@
   {% assign head_canonical_url = head_canonical_path | replace: 'index.html', '' | absolute_url %}
 {% endif %}
 <link rel="canonical" href="{{ head_canonical_url }}">
+<link rel="describedby" href="{{ '/llms.txt' | absolute_url }}" type="text/plain">
+{% assign markdown_path_last_character = head_canonical_path | slice: -1, 1 %}
+{% if head_canonical_path == '/' %}
+  {% assign markdown_alternate_path = '/index.md' %}
+{% elsif markdown_path_last_character == '/' %}
+  {% assign markdown_alternate_path = head_canonical_path | append: 'index.md' %}
+{% elsif head_canonical_path contains '.html' %}
+  {% assign markdown_alternate_path = head_canonical_path | replace: '.html', '.md' %}
+{% else %}
+  {% assign markdown_alternate_path = head_canonical_path | append: '.md' %}
+{% endif %}
+<link rel="alternate" type="text/markdown" href="{{ markdown_alternate_path | absolute_url }}">
 
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>

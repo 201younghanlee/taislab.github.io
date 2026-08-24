@@ -11,3 +11,5 @@ _site
 Gemfile.lock
 node_modules/
 vendor
+**/.wrangler/
+**/__pycache__/

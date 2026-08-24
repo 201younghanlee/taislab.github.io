@@ -34,6 +34,7 @@ jobs:
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
+          python3 scripts/generate_agent_markdown.py --site-dir _site --base-url https://www.taislab.co.kr
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
